@@ -20,7 +20,7 @@ Display your contact details and social media pages easily through this simple d
 
 == Frequently Asked Questions ==
 
-= Where can I enter my contact information? =
+= Where can I enter my contact information?
 
 Within the widget itself.
 
@@ -36,7 +36,4 @@ Within the widget itself.
 * Version 1 release
 * Changed file structure
 * Added new icon set "Cute" - http://tinyurl.com/k9ytz6h
-
-= 1.0.1 =
-* Minor code changes
 

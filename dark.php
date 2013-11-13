@@ -37,22 +37,22 @@
    }
    // Check if facebook is set
    if( $facebook ) {
-    echo '<a href="'.$facebook.'"><img src="' . plugins_url( 'social-contact-display/images/dark/social-facebook.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+    echo '<a href="'.$facebook.'"><img src="' . plugins_url( 'Social-Contact-Display/images/dark/social-facebook.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
    }
    // Check if twitter is set
   if( $twitter ) {
-     echo '<a href="'.$twitter.'"><img src="' . plugins_url( 'social-contact-display/images/dark/social-twitter.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+     echo '<a href="'.$twitter.'"><img src="' . plugins_url( 'Social-Contact-Display/images/dark/social-twitter.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
    }
    // Check if gplus is set
    if( $gplus ) {
-     echo '<a href="'.$gplus.'"><img src="' . plugins_url( 'social-contact-display/images/dark/social-googleplus.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+     echo '<a href="'.$gplus.'"><img src="' . plugins_url( 'Social-Contact-Display/images/dark/social-googleplus.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
    }
    // Check if linkedin is set
    if( $linkedin ) {
-     echo '<a href="'.$linkedin.'"><img src="' . plugins_url( 'social-contact-display/images/dark/social-linkedin.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+     echo '<a href="'.$linkedin.'"><img src="' . plugins_url( 'Social-Contact-Display/images/dark/social-linkedin.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
    }
    // Check if youtube is set
    if( $youtube ) {
-     echo '<a href="'.$youtube.'"><img src="' . plugins_url( 'social-contact-display/images/dark/social-youtube.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+     echo '<a href="'.$youtube.'"><img src="' . plugins_url( 'Social-Contact-Display/images/dark/social-youtube.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
    }
 ?>

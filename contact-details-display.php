@@ -8,11 +8,11 @@ Author: HPTOnline (Ian Norris, James White)
 License: GPL2
 */
 
-class wp_my_plugin extends WP_Widget {
+class social_contact_display extends WP_Widget {
 
 	// constructor
-    function wp_my_plugin() {
-        parent::WP_Widget(false, $name = __('Contact Details Display', 'wp_my_plugin') );
+    function social_contact_display() {
+        parent::WP_Widget(false, $name = __('Social Contact Display', 'social_contact_display') );
     }
 
 	// widget form creation
@@ -184,10 +184,10 @@ function widget($args, $instance) {
 	if ( $select == 'Light' ) {
 		include_once "light.php";
 		} 
-	if ( $select == 'Dark' ) {
+	elseif ( $select == 'Dark' ) {
 		include_once "dark.php";
 		}
-	if ( $select == 'Cute' ) {
+	elseif ( $select == 'Cute' ) {
 		include_once "cute.php";
 		}		
 
@@ -196,7 +196,7 @@ function widget($args, $instance) {
 }
 }	
 // register widget
-add_action('widgets_init', create_function('', 'return register_widget("wp_my_plugin");'));
+add_action('widgets_init', create_function('', 'return register_widget("social_contact_display");'));
 
 
 ?>
