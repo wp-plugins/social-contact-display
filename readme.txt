@@ -11,7 +11,7 @@ Social Contact Display Widget
 
 == Description ==
 
-Homepage Technologies have created a simple social contact display widget for your WordPress website. A very simple user interface allows you to easily update both your business address and your social media sites, including Facebook, Twitter, LinkedIn, Google Plus and Dribble.
+Homepage Technologies have created a simple social contact display widget for your WordPress website. A very simple user interface allows you to easily update both your business address and your social media sites, including Facebook, Twitter, LinkedIn and Google Plus.
 
 You also have the choice of social media icons to work with your background colour and the widget inherits your sites CSS.
 

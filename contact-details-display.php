@@ -129,10 +129,11 @@ echo '<option value="' . $option . '" id="' . $option . '"', $select == $option 
 }
 ?>
 </select>
-<div font size="2">Examples can be found <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/social-media-icons/">here</a>
+<div font size="1">Examples can be found <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/social-media-icons/" target="_blank">here</a>
 </div> 
 </p>
 <p>
+<br />
 <div align="center">
 <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion/" target="_blank">Got a suggestion? Get in touch!</a>
 </div>
