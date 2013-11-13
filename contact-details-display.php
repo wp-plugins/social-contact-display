@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Social Contact Display
-Plugin URI: http://demo.homepage-technologies.co.uk/social-contact-display-widget/
+Plugin URI: http://demo.homepage-technologies.co.uk/contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple display widget
 Version: 1.0.1
 Author: HPTOnline (Ian Norris, James White)
