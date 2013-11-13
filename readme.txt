@@ -18,7 +18,7 @@ You also have the choice of social media icons to work with your background colo
 == Installation ==
 
 1. Upload social-contact-display  to the  /wp-content/plugins/ directory
-2. Activate the WordPress Social Contact Display Widget plugin through the ‘Plugins’ menu in WordPress
+2. Activate the WordPress Social Contact Display Widget plugin through the 'Plugins' menu in WordPress
 3. Navigate to Appearance > Widgets
 4. Locate the WordPress Social Contact Display widget and drag to your desired location
 5. Fill in the options and select Save
