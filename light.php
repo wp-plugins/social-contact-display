@@ -37,22 +37,22 @@
    }
    // Check if facebook is set
    if( $facebook ) {
-    echo '<a href="'.$facebook.'"><img src="' . plugins_url( 'social-contact-display/images/light/social-facebook-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+    echo '<a href="'.$facebook.'" target="_blank"><img src="' . plugins_url( 'social-contact-display/images/light/social-facebook-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
    }
    // Check if twitter is set
   if( $twitter ) {
-     echo '<a href="'.$twitter.'"><img src="' . plugins_url( 'social-contact-display/images/light/social-twitter-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+     echo '<a href="'.$twitter.'" target="_blank"><img src="' . plugins_url( 'social-contact-display/images/light/social-twitter-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
    }
    // Check if gplus is set
    if( $gplus ) {
-     echo '<a href="'.$gplus.'"><img src="' . plugins_url( 'social-contact-display/images/light/social-googleplus-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+     echo '<a href="'.$gplus.'" target="_blank"><img src="' . plugins_url( 'social-contact-display/images/light/social-googleplus-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
    }
    // Check if linkedin is set
    if( $linkedin ) {
-     echo '<a href="'.$linkedin.'"><img src="' . plugins_url( 'social-contact-display/images/light/social-linkedin-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+     echo '<a href="'.$linkedin.'" target="_blank"><img src="' . plugins_url( 'social-contact-display/images/light/social-linkedin-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
    }
    // Check if youtube is set
    if( $youtube ) {
-     echo '<a href="'.$youtube.'"><img src="' . plugins_url( 'social-contact-display/images/light/social-youtube-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+     echo '<a href="'.$youtube.'" target="_blank"><img src="' . plugins_url( 'social-contact-display/images/light/social-youtube-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
    }
 ?>
