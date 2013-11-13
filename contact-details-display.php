@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.homepage-technologies.co.uk/contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple display widget
-Version: 1.0.2
+Version: 1.0.3
 Author: HPTOnline (Ian Norris, James White)
 License: GPL2
 */
@@ -123,12 +123,14 @@ if( $instance) {
 <label for="<?php echo $this->get_field_id('select'); ?>"><?php _e('Select', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 <?php
-$options = array('Light', 'Dark', 'Cute', 'Shaded');
+$options = array('Light', 'Dark', 'Cute', 'Shaded', 'Simple Flat');
 foreach ($options as $option) {
 echo '<option value="' . $option . '" id="' . $option . '"', $select == $option ? ' selected="select"' : '', '>', $option, '</option>';
 }
 ?>
 </select>
+<div font size="2">Examples can be found <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/social-media-icons/">here</a>
+</div> 
 </p>
 <p>
 <div align="center">
@@ -197,6 +199,9 @@ function widget($args, $instance) {
 		}		
 	elseif ( $select == 'Shaded' ) {
 		include_once "shaded.php";
+		}	
+	elseif ( $select == 'Simple Flat' ) {
+		include_once "simple-flat.php";
 		}		
 
    echo '</div>';

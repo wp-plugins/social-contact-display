@@ -1,11 +1,11 @@
 === Plugin Name ===
 Contributors: hptonline
-Tags: social, contact, widget
+Tags: social, contact, widget, social media, facebook, google plus, google, twitter, linkedin, youtube
 Requires at least: 3.0.1
 Tested up to: 3.7.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 1.0.2
+Stable Tag: 1.0.3
 
 Social Contact Display Widget
 
@@ -54,12 +54,16 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 = 1.0 =
 * Version 1 release
 * Changed file structure
-* Added new icon set "Cute" - http://tinyurl.com/k9ytz6h
+* Added new icon set "Cute" - http://tinyurl.com/qhr8tpw
 
 = 1.0.1 =
 * Minor code changes
 
 = 1.0.2 =
-* Added new icon set "Shaded" - http://tinyurl.com/ok7l5h6
+* Added new icon set "Shaded" - http://tinyurl.com/qhr8tpw
+
+= 1.0.3 =
+* Added new icon set "Simple Flat" - http://tinyurl.com/qhr8tpw
+
 
 
