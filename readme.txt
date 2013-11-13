@@ -5,6 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.7.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Stable Tag: 1.0
 
 Social Contact Display Widget
 
@@ -30,4 +31,9 @@ Within the widget itself.
 
 = 0.2 =
 * Added optional light or dark icon set
+
+= 1.0 =
+* Version 1 release
+* Changed file structure
+* Added new icon set "Cute" - http://tinyurl.com/k9ytz6h
 
