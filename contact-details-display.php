@@ -123,7 +123,7 @@ if( $instance) {
 <label for="<?php echo $this->get_field_id('select'); ?>"><?php _e('Select', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 <?php
-$options = array('Light', 'Dark', 'Cute');
+$options = array('Light', 'Dark', 'Cute', 'Shaded');
 foreach ($options as $option) {
 echo '<option value="' . $option . '" id="' . $option . '"', $select == $option ? ' selected="select"' : '', '>', $option, '</option>';
 }
@@ -189,6 +189,9 @@ function widget($args, $instance) {
 		}
 	elseif ( $select == 'Cute' ) {
 		include_once "cute.php";
+		}		
+	elseif ( $select == 'Shaded' ) {
+		include_once "shaded.php";
 		}		
 
    echo '</div>';
