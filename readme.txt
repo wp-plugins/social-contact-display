@@ -29,6 +29,20 @@ You also have the choice of social media icons to work with your background colo
 
 Within the widget itself.
 
+= Which Social Media sites are currently suported? =
+
+Facebook
+Google+
+Twitter
+LinkedIn
+YouTube
+
+= I have a suggestion for the plugin, where can I submit it? =
+
+Etiher via the support tab, or via our site:
+
+http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion/
+
 == Changelog ==
 
 = 0.1 =

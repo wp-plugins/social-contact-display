@@ -132,7 +132,7 @@ echo '<option value="' . $option . '" id="' . $option . '"', $select == $option 
 </p>
 <p>
 <div align="center">
-<a href="http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion/">Got a suggestion? Get in touch!</a>
+<a href="http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion/" target="_blank">Got a suggestion? Get in touch!</a>
 </div>
 </p>
 <?php
