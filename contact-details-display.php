@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.homepage-technologies.co.uk/contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple display widget
-Version: 1.0.3
+Version: 1.0.4
 Author: HPTOnline (Ian Norris, James White)
 License: GPL2
 */
@@ -34,6 +34,7 @@ if( $instance) {
 	 $linkedin = esc_attr($instance['linkedin']);
 	 $dribble = esc_attr($instance['dribble']);
 	 $youtube = esc_attr($instance['youtube']);
+	 $pinterest = esc_attr($instance['pinterest']);
 	 $select = esc_attr($instance['select']);
 } else {
      $title = '';
@@ -50,6 +51,7 @@ if( $instance) {
 	 $linkedin = '';
 	 $dribble = '';
 	 $youtube = '';
+	 $pinterest = '';
 	 $select = '';
 }
 ?>
@@ -120,16 +122,21 @@ if( $instance) {
 </p>
 
 <p>
+<label for="<?php echo $this->get_field_id('pinterest'); ?>"><?php _e('Pinterest URL:', 'wp_widget_plugin'); ?></label>
+<input class="widefat" id="<?php echo $this->get_field_id('pinterest'); ?>" name="<?php echo $this->get_field_name('pinterest'); ?>" type="text" value="<?php echo $pinterest; ?>" />
+</p>
+
+<p>
 <label for="<?php echo $this->get_field_id('select'); ?>"><?php _e('Select', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 <?php
-$options = array('Light', 'Dark', 'Cute', 'Shaded', 'Simple Flat');
+$options = array('Light', 'Dark', 'Cute', 'Shaded', 'Simple Flat', 'Circle');
 foreach ($options as $option) {
 echo '<option value="' . $option . '" id="' . $option . '"', $select == $option ? ' selected="select"' : '', '>', $option, '</option>';
 }
 ?>
 </select>
-<div font size="1">Examples can be found <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/social-media-icons/" target="_blank">here</a>
+<div style="font-size: 10px">Examples can be found <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/social-media-icons/" target="_blank">here</a>
 </div> 
 </p>
 <p>
@@ -159,6 +166,7 @@ function update($new_instance, $old_instance) {
 	  $instance['linkedin'] = strip_tags($new_instance['linkedin']);
 	  $instance['dribble'] = strip_tags($new_instance['dribble']);
 	  $instance['youtube'] = strip_tags($new_instance['youtube']);
+	  $instance['pinterest'] = strip_tags($new_instance['pinterest']);
 	  $instance['select'] = strip_tags($new_instance['select']);
      return $instance;
 }
@@ -181,6 +189,7 @@ function widget($args, $instance) {
    $linkedin = $instance['linkedin'];
    $dribble = $instance['dribble'];
    $youtube = $instance['youtube'];
+   $pinterest = $instance['pinterest'];
    $select = $instance['select'];
 
    echo $before_widget;
@@ -190,19 +199,22 @@ function widget($args, $instance) {
    
    // Get $select value
 	if ( $select == 'Light' ) {
-		include_once "light.php";
+		include_once "includes/light.php";
 		} 
 	elseif ( $select == 'Dark' ) {
-		include_once "dark.php";
+		include_once "includes/dark.php";
 		}
 	elseif ( $select == 'Cute' ) {
-		include_once "cute.php";
+		include_once "includes/cute.php";
 		}		
 	elseif ( $select == 'Shaded' ) {
-		include_once "shaded.php";
+		include_once "includes/shaded.php";
 		}	
 	elseif ( $select == 'Simple Flat' ) {
-		include_once "simple-flat.php";
+		include_once "includes/simple-flat.php";
+		}
+	elseif ( $select == 'Circle' ) {
+		include_once "includes/circle.php";
 		}		
 
    echo '</div>';

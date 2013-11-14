@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.7.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 1.0.3
+Stable Tag: 1.0.4
 
 Social Contact Display Widget
 
@@ -36,6 +36,7 @@ Google+
 Twitter
 LinkedIn
 YouTube
+Pinterest
 
 = I have a suggestion for the plugin, where can I submit it? =
 
@@ -54,16 +55,23 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 = 1.0 =
 * Version 1 release
 * Changed file structure
-* Added new icon set "Cute" - http://tinyurl.com/qhr8tpw
+* Added new icon set "Cute"
 
 = 1.0.1 =
 * Minor code changes
 
 = 1.0.2 =
-* Added new icon set "Shaded" - http://tinyurl.com/qhr8tpw
+* Added new icon set "Shaded"
 
 = 1.0.3 =
-* Added new icon set "Simple Flat" - http://tinyurl.com/qhr8tpw
+* Added new icon set "Simple Flat" 
+
+= 1.0.4 =
+* Changed file structure
+* Added Pinterest as an option
+* Updated icon sets for future additional Social Media sites
+* Added new icon set "Circle" - http://tinyurl.com/qhr8tpw 
+
 
 
 
