@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.7.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 1.0.4
+Stable Tag: 1.0.5
 
 Social Contact Display Widget
 
@@ -71,6 +71,9 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 * Added Pinterest as an option
 * Updated icon sets for future additional Social Media sites
 * Added new icon set "Circle" - http://tinyurl.com/qhr8tpw 
+
+= 1.0.5 =
+* Added email encryption using WordPress antibot
 
 
 

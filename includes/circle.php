@@ -33,7 +33,7 @@
    }
    // Check if email is set
    if( $email ) {
-     echo '<p class="wp_widget_plugin_textarea"><a href="mailto:'.$email.'" target="top">'.$email.'</a></p>';
+     echo '<p class="wp_widget_plugin_textarea"><a href="mailto:' . antispambot($email) .'">' . antispambot($email) . '</a></p>';
    }
    // Check if facebook is set
    if( $facebook ) {
