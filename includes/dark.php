@@ -55,7 +55,7 @@
    if( $youtube ) {
      echo '<a href="'.$youtube.'" target="_blank"><img src="' . plugins_url( 'images/dark/social-youtube.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
    }
-//   if( $pinterest ) {
-//     echo '<a href="'.$pinterest.'" target="_blank"><img src="' . plugins_url( 'social-contact-display/images/dark/pinterest.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
-//   }
+   if( $pinterest ) {
+     echo '<a href="'.$pinterest.'" target="_blank"><img src="' . plugins_url( 'social-contact-display/images/dark/social-pintrest.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+   }
 ?>
