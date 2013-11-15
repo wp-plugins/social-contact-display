@@ -82,7 +82,7 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 
 = 1.0.7 =
 * Added new icon set "Wooden" - http://tinyurl.com/qhr8tpw 
-* Added new icon set "Modern Flat" - <a href="http://aboutjameswhite.co.uk/">Designed by James White</a>
+* Added new icon set "Modern Flat" - <a href="http://jamesw182.co.uk/">Designed by James White</a>
 
 
 
