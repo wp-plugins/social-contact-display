@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.homepage-technologies.co.uk/contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple display widget
-Version: 1.0.5
+Version: 1.0.6
 Author: HPTOnline (Ian Norris, James White)
 License: GPL2
 */
@@ -130,7 +130,7 @@ if( $instance) {
 <label for="<?php echo $this->get_field_id('select'); ?>"><?php _e('Select', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 <?php
-$options = array('Light', 'Dark', 'Cute', 'Shaded', 'Simple Flat', 'Circle');
+$options = array('Light', 'Dark', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage');
 foreach ($options as $option) {
 echo '<option value="' . $option . '" id="' . $option . '"', $select == $option ? ' selected="select"' : '', '>', $option, '</option>';
 }
@@ -145,6 +145,7 @@ echo '<option value="' . $option . '" id="' . $option . '"', $select == $option 
 <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion/" target="_blank">Got a suggestion? Get in touch!</a>
 </div>
 </p>
+
 <?php
 }
 
@@ -215,8 +216,11 @@ function widget($args, $instance) {
 		}
 	elseif ( $select == 'Circle' ) {
 		include_once "includes/circle.php";
+		}
+	elseif ( $select == 'Vintage' ) {
+		include_once "includes/vintage.php";
 		}		
-
+		
    echo '</div>';
    echo $after_widget;
 }
