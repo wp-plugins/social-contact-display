@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.homepage-technologies.co.uk/contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple display widget
-Version: 1.0.6
+Version: 1.0.7
 Author: HPTOnline (Ian Norris, James White)
 License: GPL2
 */
@@ -130,7 +130,7 @@ if( $instance) {
 <label for="<?php echo $this->get_field_id('select'); ?>"><?php _e('Select', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 <?php
-$options = array('Light', 'Dark', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage');
+$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Wooden');
 foreach ($options as $option) {
 echo '<option value="' . $option . '" id="' . $option . '"', $select == $option ? ' selected="select"' : '', '>', $option, '</option>';
 }
@@ -219,6 +219,12 @@ function widget($args, $instance) {
 		}
 	elseif ( $select == 'Vintage' ) {
 		include_once "includes/vintage.php";
+		}	
+	elseif ( $select == 'Wooden' ) {
+		include_once "includes/wooden.php";
+		}	
+	elseif ( $select == 'Modern Flat' ) {
+		include_once "includes/modernflat.php";
 		}		
 		
    echo '</div>';
@@ -228,5 +234,18 @@ function widget($args, $instance) {
 // register widget
 add_action('widgets_init', create_function('', 'return register_widget("social_contact_display");'));
 
+// register style on initialization
+add_action('init', 'register_script');
+function register_script(){
+
+    wp_register_style( 'new_style', plugins_url('/css/style.css', __FILE__));
+}
+
+// use the registered style above
+add_action('wp_enqueue_scripts', 'enqueue_style');
+function enqueue_style(){
+
+    wp_enqueue_style( 'new_style' );
+} 
 
 ?>
