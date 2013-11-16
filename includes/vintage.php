@@ -22,18 +22,22 @@
    }
    // Check if pcode is set
    if( $pcode ) {
-     echo '<p class="wp_widget_plugin_textarea">'.$pcode.'</p>';
+     echo ''.$pcode.'<br />';
 	 }
  	 if($pcode=="" ) {
 		echo '<p></p>';
    }
    // Check if telephone is set
    if( $telephone ) {
-     echo '<p class="wp_widget_plugin_textarea">'.$telephone.'</p>';
+     echo ''.$telephone.'<br />';
    }
    // Check if email is set
    if( $email ) {
-     echo '<p class="wp_widget_plugin_textarea"><a href="mailto:' . antispambot($email) .'">' . antispambot($email) . '</a></p>';
+     echo '<a href="mailto:' . antispambot($email) .'">' . antispambot($email) . '</a><br />';
+   }
+   // Check if socialicontitle is set
+   if( $socialiconstitle ) {
+     echo '<br /><strong>' . $socialiconstitle . '</strong><br /><br />';
    }
    // Check if facebook is set
    if( $facebook ) {
