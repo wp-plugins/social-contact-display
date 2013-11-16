@@ -21,16 +21,19 @@ if( $instance) {
 
 }
 ?>
+<h3>Twitter</h3>
 
 <p>
 <label for="<?php echo $this->get_field_id('twitteracc'); ?>"><?php _e('Twitter Account:', 'wp_widget_plugin'); ?></label>
 <input class="widefat" id="<?php echo $this->get_field_id('twitteracc'); ?>" name="<?php echo $this->get_field_name('twitteracc'); ?>" type="text" value="<?php echo $twitteracc; ?>" />
 </p>
+<hr>
+<h3>Facebook</h3>
 
 <p>
 Do you want to include Facebook Like and Share?
 <input id="<?php echo $this->get_field_id('facebooklike'); ?>" name="<?php echo $this->get_field_name('facebooklike'); ?>" type="checkbox" value="1" <?php checked( '1', $facebooklike ); ?> />
-<label for="<?php echo $this->get_field_id('facebooklike'); ?>"><?php _e('facebooklike', 'wp_widget_plugin'); ?></label>
+<label for="<?php echo $this->get_field_id('facebooklike'); ?>"><?php _e('', 'wp_widget_plugin'); ?></label>
 </p>
 
 <?php
