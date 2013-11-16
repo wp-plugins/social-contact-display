@@ -13,9 +13,11 @@ function form($instance) {
 // Check values
 if( $instance) {
      $twitteracc = esc_attr($instance['twitteracc']);
+	 $facebooklike = esc_attr($instance['facebooklike']);
 
 } else {
      $twitteracc = '';
+	 $facebooklike = '';
 
 }
 ?>
@@ -23,6 +25,12 @@ if( $instance) {
 <p>
 <label for="<?php echo $this->get_field_id('twitteracc'); ?>"><?php _e('Twitter Account:', 'wp_widget_plugin'); ?></label>
 <input class="widefat" id="<?php echo $this->get_field_id('twitteracc'); ?>" name="<?php echo $this->get_field_name('twitteracc'); ?>" type="text" value="<?php echo $twitteracc; ?>" />
+</p>
+
+<p>
+Do you want to include Facebook Like and Share?
+<input id="<?php echo $this->get_field_id('facebooklike'); ?>" name="<?php echo $this->get_field_name('facebooklike'); ?>" type="checkbox" value="1" <?php checked( '1', $facebooklike ); ?> />
+<label for="<?php echo $this->get_field_id('facebooklike'); ?>"><?php _e('facebooklike', 'wp_widget_plugin'); ?></label>
 </p>
 
 <?php
@@ -33,6 +41,7 @@ function update($new_instance, $old_instance) {
       $instance = $old_instance;
       // Fields
       $instance['twitteracc'] = strip_tags($new_instance['twitteracc']);
+	  $instance['facebooklike'] = strip_tags($new_instance['facebooklike']);
      return $instance;
 }
 
@@ -40,7 +49,8 @@ function update($new_instance, $old_instance) {
 function widget($args, $instance) {
    extract( $args );
    // these are the widget options
-   $title = apply_filters('widget_title', $instance['twitteracc']);
+   $twitteracc = apply_filters('widget_title', $instance['twitteracc']);
+   $facebooklike = $instance['facebooklike'];
 
    echo $before_widget;
    // Display the widget
@@ -51,6 +61,9 @@ function widget($args, $instance) {
 	if( $twitteracc ) {
 		include_once "includes/twitter-follow.php";
 			}	
+	if( $facebooklike ) {
+		include_once "includes/facebook-like.php";
+			}			
 		
    echo '</div>';
    echo $after_widget;
