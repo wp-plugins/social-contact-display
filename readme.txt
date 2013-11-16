@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: hptonline
-Tags: social, contact, widget, social media, facebook, google plus, google, twitter, linkedin, youtube
+Tags: social, contact, widget, social media, facebook, google plus, google, twitter, linkedin, youtube, social media icons
 Requires at least: 3.0.1
 Tested up to: 3.7.1
 License: GPLv2
@@ -45,6 +45,11 @@ Pinterest
 Etiher via the support tab, or via our site:
 
 http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion/
+
+== Screenshots ==
+
+1. "Modern Flat" Social Media Icon Set - <a href="http://jamesw182.co.uk/">Designed by James White</a>
+2. "Social Interaction Buttons" widget
 
 == Changelog ==
 

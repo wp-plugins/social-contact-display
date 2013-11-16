@@ -33,7 +33,7 @@ if( $instance) {
 <h3>Facebook</h3>
 
 <p>
-Do you want to include Facebook Like and Share?
+Do you want to include Facebook Like and Share?<br />
 <input id="<?php echo $this->get_field_id('facebooklike'); ?>" name="<?php echo $this->get_field_name('facebooklike'); ?>" type="checkbox" value="1" <?php checked( '1', $facebooklike ); ?> />
 <label for="<?php echo $this->get_field_id('facebooklike'); ?>"><?php _e('', 'wp_widget_plugin'); ?></label>
 </p>
@@ -41,7 +41,7 @@ Do you want to include Facebook Like and Share?
 <h3>Google+</h3>
 
 <p>
-Do you want to include Google +1?
+Do you want to include Google +1?<br/>
 <input id="<?php echo $this->get_field_id('googleplus'); ?>" name="<?php echo $this->get_field_name('googleplus'); ?>" type="checkbox" value="1" <?php checked( '1', $googleplus ); ?> />
 <label for="<?php echo $this->get_field_id('googleplus'); ?>"><?php _e('', 'wp_widget_plugin'); ?></label>
 </p>

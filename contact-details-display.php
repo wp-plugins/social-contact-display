@@ -178,7 +178,7 @@ function update($new_instance, $old_instance) {
 function widget($args, $instance) {
    extract( $args );
    // these are the widget options
-   $title = apply_filters('widget_title', $instance['title']);
+   $title = $instance['title'];
    $addresslineone = $instance['addresslineone'];
    $addresslinetwo = $instance['addresslinetwo'];
    $city = $instance['city'];
