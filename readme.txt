@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: hptonline
-Tags: social, contact, widget, social media, facebook, google plus, google, twitter, linkedin, youtube, social media icons
+Tags: social, contact, widget, social media, facebook, google plus, google, twitter, linkedin, youtube, pinterest, social media icons, social share, css, html5
 Requires at least: 3.0.1
 Tested up to: 3.7.1
 License: GPLv2
@@ -100,6 +100,9 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 
 = 1.2.1 =
 * Added social media icon title (Connect with us)
+
+= 1.2.2 =
+* Added pure HTML5 and CSS3 social media icon set based on IcoMoon fonts
 
 
 
