@@ -141,7 +141,7 @@ if( $instance) {
 <label for="<?php echo $this->get_field_id('select'); ?>"><?php _e('Select', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 <?php
-$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Wooden', 'CSS 1');
+$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Wooden', 'CSS and HTML5 set 1');
 foreach ($options as $option) {
 echo '<option value="' . $option . '" id="' . $option . '"', $select == $option ? ' selected="select"' : '', '>', $option, '</option>';
 }
@@ -239,7 +239,7 @@ function widget($args, $instance) {
 	elseif ( $select == 'Modern Flat' ) {
 		include_once "includes/modernflat.php";
 		}
-	elseif ( $select == 'CSS 1' ) {
+	elseif ( $select == 'CSS and HTML5 set 1' ) {
 		include_once "includes/css1.php";
 		}	
 		
