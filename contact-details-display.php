@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.homepage-technologies.co.uk/contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple display widget
-Version: 1.2
+Version: 1.2.1
 Author: HPTOnline (Ian Norris, James White)
 License: GPL2
 */
@@ -30,6 +30,7 @@ if( $instance) {
 	 $pcode = esc_attr($instance['pcode']);
 	 $telephone = esc_attr($instance['telephone']);
 	 $email = esc_attr($instance['email']);
+	 $socialiconstitle = esc_attr($instance['socialiconstitle']);
 	 $facebook = esc_attr($instance['facebook']);
 	 $twitter = esc_attr($instance['twitter']);
 	 $gplus = esc_attr($instance['gplus']);
@@ -47,6 +48,7 @@ if( $instance) {
 	 $pcode = '';
 	 $telephone = '';
 	 $email = '';
+	 $socialiconstitle = '';
 	 $facebook = '';
 	 $twitter = '';
 	 $gplus = '';
@@ -96,6 +98,13 @@ if( $instance) {
 <p>
 <label for="<?php echo $this->get_field_id('email'); ?>"><?php _e('Email:', 'wp_widget_plugin'); ?></label>
 <input class="widefat" id="<?php echo $this->get_field_id('email'); ?>" name="<?php echo $this->get_field_name('email'); ?>" type="text" value="<?php echo $email; ?>" />
+</p>
+
+<hr>
+
+<p>
+<label for="<?php echo $this->get_field_id('socialiconstitle'); ?>"><?php _e('Social Icons Title (e.g. Connect with Us):', 'wp_widget_plugin'); ?></label>
+<input class="widefat" id="<?php echo $this->get_field_id('socialiconstitle'); ?>" name="<?php echo $this->get_field_name('socialiconstitle'); ?>" type="text" value="<?php echo $socialiconstitle; ?>" />
 </p>
 
 <p>
@@ -163,6 +172,7 @@ function update($new_instance, $old_instance) {
 	  $instance['pcode'] = strip_tags($new_instance['pcode']);
 	  $instance['telephone'] = strip_tags($new_instance['telephone']);
 	  $instance['email'] = strip_tags($new_instance['email']);
+	  $instance['socialiconstitle'] = strip_tags($new_instance['socialiconstitle']);
 	  $instance['facebook'] = strip_tags($new_instance['facebook']);
 	  $instance['twitter'] = strip_tags($new_instance['twitter']);
 	  $instance['gplus'] = strip_tags($new_instance['gplus']);
@@ -186,6 +196,7 @@ function widget($args, $instance) {
    $pcode = $instance['pcode'];
    $telephone = $instance['telephone'];
    $email = $instance['email'];
+   $socialiconstitle = $instance['socialiconstitle'];
    $facebook = $instance['facebook'];
    $twitter = $instance['twitter'];
    $gplus = $instance['gplus'];

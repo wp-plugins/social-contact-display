@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.7.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 1.2
+Stable Tag: 1.2.1
 
 Social Contact Display Widget
 
@@ -97,6 +97,9 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 
 = 1.2 =
 * "Social Interaction Buttons" widget now has Twitter, Facebook and Google+ buttons
+
+= 1.2.1 =
+* Added social media icon title (Connect with us)
 
 
 
