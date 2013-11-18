@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.homepage-technologies.co.uk/contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple display widget
-Version: 1.2.3
+Version: 1.2.4
 Author: HPTOnline (Ian Norris, James White)
 License: GPL2
 */
@@ -210,6 +210,49 @@ function widget($args, $instance) {
    // Display the widget
    echo '<div class="widget-text wp_widget_plugin_box" style:>';
 
+   // Check if title is set
+   if ( $title ) {
+      echo '<strong>' . $title .'</strong></td></tr><br /><br />';
+   }
+
+   // Check if addresslineone is set
+   if( $addresslineone ) {
+      echo ''.$addresslineone.'<br />';
+   }
+   // Check if addresslinetwo is set
+   if( $addresslinetwo ) {
+     echo ''.$addresslinetwo.'<br />';
+   }
+   // Check if city is set
+   if( $city ) {
+     echo ''.$city.'<br />';
+   }
+   // Check if county is set
+   if( $county ) {
+     echo ''.$county.'<br />';
+   }
+   // Check if pcode is set
+   if( $pcode ) {
+     echo ''.$pcode.'<br />';
+	 }
+ 	 if($pcode=="" ) {
+		echo '<p></p>';
+   }
+   // Check if telephone is set
+   if( $telephone ) {
+     echo '<br />'.$telephone.'<br />';
+   }
+   // Check if email is set
+   if( $email ) {
+     echo '<br /><a href="mailto:' . antispambot($email) .'">' . antispambot($email) . '</a><br />';
+   }
+   // Check if socialicontitle is set
+   if( $socialiconstitle ) {
+     echo '<br /><strong>' . $socialiconstitle . '</strong><br /><br />';
+   }
+   if($socialiconstitle=="" ) {
+		echo '<p></p>';
+   }
    
    // Get $select value
 	if ( $select == 'Light' ) {

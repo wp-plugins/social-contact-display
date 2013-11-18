@@ -1,68 +1,25 @@
 <?php
-// Check if title is set
-   if ( $title ) {
-      echo '<strong>' . $title .'</strong></td></tr><br /><br />';
-   }
-
-   // Check if addresslineone is set
-   if( $addresslineone ) {
-      echo ''.$addresslineone.'<br />';
-   }
-   // Check if addresslinetwo is set
-   if( $addresslinetwo ) {
-     echo ''.$addresslinetwo.'<br />';
-   }
-   // Check if city is set
-   if( $city ) {
-     echo ''.$city.'<br />';
-   }
-   // Check if county is set
-   if( $county ) {
-     echo ''.$county.'<br />';
-   }
-   // Check if pcode is set
-   if( $pcode ) {
-     echo ''.$pcode.'<br />';
-	 }
- 	 if($pcode=="" ) {
-		echo '<p></p>';
-   }
-   // Check if telephone is set
-   if( $telephone ) {
-     echo '<br />'.$telephone.'<br />';
-   }
-   // Check if email is set
-   if( $email ) {
-     echo '<br /><a href="mailto:' . antispambot($email) .'">' . antispambot($email) . '</a><br />';
-   }
-   // Check if socialicontitle is set
-   if( $socialiconstitle ) {
-     echo '<br /><strong>' . $socialiconstitle . '</strong><br /><br />';
-   }
-   if($socialiconstitle=="" ) {
-		echo '<p></p>';
-   }
    // Check if facebook is set
    if( $facebook ) {
-    echo '<a href="'.$facebook.'" target="_blank"><img src="' . plugins_url( 'images/light/social-facebook-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+    echo '<a href="'.$facebook.'" target="_blank"><img src="http://cdn.hptonline.co.uk.nyud.net/social-contact-display/images/light/social-facebook-light.png" ></a>&nbsp;';
    }
    // Check if twitter is set
   if( $twitter ) {
-     echo '<a href="'.$twitter.'" target="_blank"><img src="' . plugins_url( 'images/light/social-twitter-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+     echo '<a href="'.$twitter.'" target="_blank"><img src="http://cdn.hptonline.co.uk.nyud.net/social-contact-display/images/light/social-twitter-light.png" ></a>&nbsp;';
    }
    // Check if gplus is set
    if( $gplus ) {
-     echo '<a href="'.$gplus.'" target="_blank"><img src="' . plugins_url( 'images/light/social-googleplus-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+     echo '<a href="'.$gplus.'" target="_blank"><img src="http://cdn.hptonline.co.uk.nyud.net/social-contact-display/images/light/social-googleplus-light.png" ></a>&nbsp;';
    }
    // Check if linkedin is set
    if( $linkedin ) {
-     echo '<a href="'.$linkedin.'" target="_blank"><img src="' . plugins_url( 'images/light/social-linkedin-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+     echo '<a href="'.$linkedin.'" target="_blank"><img src="http://cdn.hptonline.co.uk.nyud.net/social-contact-display/images/light/social-linkedin-light.png" ></a>&nbsp;';
    }
    // Check if youtube is set
    if( $youtube ) {
-     echo '<a href="'.$youtube.'" target="_blank"><img src="' . plugins_url( 'images/light/social-youtube-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+     echo '<a href="'.$youtube.'" target="_blank"><img src="http://cdn.hptonline.co.uk.nyud.net/social-contact-display/images/light/social-youtube-light.png" ></a>&nbsp;';
    }
     if( $pinterest ) {
-     echo '<a href="'.$youtube.'" target="_blank"><img src="' . plugins_url( 'images/light/social-pintrest-light.png' , dirname(__FILE__) ) . '" ></a>&nbsp;';
+     echo '<a href="'.$youtube.'" target="_blank"><img src="http://cdn.hptonline.co.uk.nyud.net/social-contact-display/images/light/social-pintrest-light.png" ></a>&nbsp;';
    }
 ?>
