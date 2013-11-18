@@ -5,15 +5,17 @@ Requires at least: 3.0.1
 Tested up to: 3.7.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 1.2.1
+Stable Tag: 1.2.3
 
 Social Contact Display Widget
 
 == Description ==
 
-Homepage Technologies have created a simple social contact display widget for your WordPress website. A very simple user interface allows you to easily update both your business address and your social media sites, including Facebook, Twitter, LinkedIn and Google Plus.
+Homepage Technologies have created a simple social contact display widget for your WordPress website. A very simple user interface allows you to easily update both your business address and your social media sites, including Facebook, Twitter, LinkedIn, Google Plus and Pinterest. The widget is modular, so you can choice which options you want to display.
 
 You also have the choice of social media icons to work with your background colour and the widget inherits your sites CSS.
+
+We have also recently added a lightweight  pure HTML5 and CSS3 social media icon set.
 
 Check out a demo: <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/">Here</a>
 
@@ -103,6 +105,9 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 
 = 1.2.2 =
 * Added pure HTML5 and CSS3 social media icon set based on IcoMoon fonts
+
+= 1.2.3 =
+* Added pure HTML5 and CSS3 social media icon set based on Entypo fonts
 
 
 

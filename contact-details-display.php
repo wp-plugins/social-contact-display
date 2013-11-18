@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.homepage-technologies.co.uk/contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple display widget
-Version: 1.2.2
+Version: 1.2.3
 Author: HPTOnline (Ian Norris, James White)
 License: GPL2
 */
@@ -141,7 +141,7 @@ if( $instance) {
 <label for="<?php echo $this->get_field_id('select'); ?>"><?php _e('Select', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 <?php
-$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Wooden', 'CSS and HTML5 set 1');
+$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Wooden', 'CSS and HTML5 set 1', 'CSS and HTML5 set 2');
 foreach ($options as $option) {
 echo '<option value="' . $option . '" id="' . $option . '"', $select == $option ? ' selected="select"' : '', '>', $option, '</option>';
 }
@@ -241,6 +241,9 @@ function widget($args, $instance) {
 		}
 	elseif ( $select == 'CSS and HTML5 set 1' ) {
 		include_once "includes/css1.php";
+		}
+	elseif ( $select == 'CSS and HTML5 set 2' ) {
+		include_once "includes/css2.php";
 		}	
 		
    echo '</div>';
@@ -256,6 +259,7 @@ add_action('init', 'register_style');
 function register_style(){
 
     wp_register_style( 'social_contact_display', plugins_url('/css/socialcontactdisplay.css', __FILE__));
+	wp_register_style( 'entypo', plugins_url('/css/entypo.css', __FILE__));
 }
 
 // use the registered style above
@@ -263,6 +267,7 @@ add_action('wp_enqueue_scripts', 'enqueue_style');
 function enqueue_style(){
 
     wp_enqueue_style( 'social_contact_display' );
+	wp_enqueue_style( 'entypo' );
 } 
 
 ?>
