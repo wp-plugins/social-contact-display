@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.7.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 1.2.8
+Stable Tag: 1.2.9
 
 Social Contact Display Widget
 
@@ -13,9 +13,9 @@ Social Contact Display Widget
 
 Homepage Technologies have created a simple social contact display widget for your WordPress website. A very simple user interface allows you to easily update both your business address and your social media sites, including Facebook, Twitter, LinkedIn, Google Plus and Pinterest. The widget is modular, so you can choose which options you want to display.
 
-You also have the choice of social media icons to work with your background colour and the widget inherits your sites CSS.
+You currently have 11 <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/social-media-icons/">Social Media Icon Sets</a> to choose from and the list is being added to all the time.
 
-We have also recently added a lightweight  pure HTML5 and CSS3 social media icon set.
+We have also recently added lightweight pure HTML5 and CSS3 social media icon sets.
 
 Check out a demo: <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/">Here</a>
 
@@ -54,6 +54,9 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 2. "Social Interaction Buttons" widget
 
 == Changelog ==
+
+= 1.2.9 =
+* Added 2 more social media icon sets - Retro 1 and Retro 2 http://tinyurl.com/qhr8tpw 
 
 = 1.2.8 =
 * Added "Button Count" style option for Facebook buttons
