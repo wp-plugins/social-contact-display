@@ -119,7 +119,7 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 * Added style option for Facebook buttons
 
 = 1.2.7 =
-* REmoved Coral CDN - unfortunately it was not up to the job and was quite slow..
+* Removed Coral CDN - unfortunately it was not up to the job and was quite slow..
 
 
 
