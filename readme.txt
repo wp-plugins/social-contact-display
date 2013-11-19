@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.7.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 1.2.7
+Stable Tag: 1.2.8
 
 Social Contact Display Widget
 
@@ -120,6 +120,10 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 
 = 1.2.7 =
 * Removed Coral CDN - unfortunately it was not up to the job and was quite slow..
+
+= 1.2.8 =
+* Added "Button Count" style option for Facebook buttons
+* Added optional Twitter followers count
 
 
 

@@ -13,12 +13,14 @@ function form($instance) {
 // Check values
 if( $instance) {
      $twitteracc = esc_attr($instance['twitteracc']);
+	 $twittersc = esc_attr($instance['twittersc']);
 	 $facebooklike = esc_attr($instance['facebooklike']);
 	 $facebooklikestyle = esc_attr($instance['facebooklikestyle']);
 	 $googleplus = esc_attr($instance['googleplus']);
 
 } else {
      $twitteracc = '';
+	 $twittersc = '';
 	 $facebooklike = '';
 	 $facebooklikestyle = '';
 	 $googleplus = '';
@@ -31,6 +33,11 @@ if( $instance) {
 <label for="<?php echo $this->get_field_id('twitteracc'); ?>"><?php _e('Twitter Account:', 'wp_widget_plugin'); ?></label>
 <input class="widefat" id="<?php echo $this->get_field_id('twitteracc'); ?>" name="<?php echo $this->get_field_name('twitteracc'); ?>" type="text" value="<?php echo $twitteracc; ?>" />
 </p>
+Show count?<br />
+<input id="<?php echo $this->get_field_id('twittersc'); ?>" name="<?php echo $this->get_field_name('twittersc'); ?>" type="checkbox" value="1" <?php checked( '1', $twittersc ); ?> />
+<label for="<?php echo $this->get_field_id('twittersc'); ?>"><?php _e('', 'wp_widget_plugin'); ?></label>
+<br />
+</p>
 <hr>
 <h3>Facebook</h3>
 
@@ -39,11 +46,11 @@ Do you want to include Facebook Like and Share?<br />
 <input id="<?php echo $this->get_field_id('facebooklike'); ?>" name="<?php echo $this->get_field_name('facebooklike'); ?>" type="checkbox" value="1" <?php checked( '1', $facebooklike ); ?> />
 <label for="<?php echo $this->get_field_id('facebooklike'); ?>"><?php _e('', 'wp_widget_plugin'); ?></label>
 <br />
-
+<br />
 <label for="<?php echo $this->get_field_id('facebooklikestyle'); ?>"><?php _e('Style', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('facebooklikestyle'); ?>" id="<?php echo $this->get_field_id('facebooklikestyle'); ?>" class="widefat">
 <?php
-$options = array('Standard', 'Box Count');
+$options = array('Standard', 'Box Count', 'Button Count');
 foreach ($options as $option) {
 echo '<option value="' . $option . '" id="' . $option . '"', $facebooklikestyle == $option ? ' selected="facebooklikestyle"' : '', '>', $option, '</option>';
 }
@@ -69,6 +76,7 @@ function update($new_instance, $old_instance) {
       $instance = $old_instance;
       // Fields
       $instance['twitteracc'] = strip_tags($new_instance['twitteracc']);
+	  $instance['twittersc'] = strip_tags($new_instance['twittersc']);
 	  $instance['facebooklike'] = strip_tags($new_instance['facebooklike']);
 	  $instance['facebooklikestyle'] = strip_tags($new_instance['facebooklikestyle']);
 	  $instance['googleplus'] = strip_tags($new_instance['googleplus']);
@@ -80,6 +88,7 @@ function widget($args, $instance) {
    extract( $args );
    // these are the widget options
    $twitteracc = apply_filters('widget_title', $instance['twitteracc']);
+   $twittersc = $instance['twittersc'];
    $facebooklike = $instance['facebooklike'];
    $facebooklikestyle = $instance['facebooklikestyle'];
    $googleplus = $instance['googleplus'];
@@ -87,7 +96,6 @@ function widget($args, $instance) {
    echo $before_widget;
    // Display the widget
    echo '<div class="widget-text wp_widget_plugin_box" style:>';
-
    
    // Get $select value
 	if( $twitteracc ) {
@@ -98,8 +106,7 @@ function widget($args, $instance) {
 			}
 	if( $googleplus ) {
 		include_once "includes/google-plus.php";
-			}			
-		
+			}						
    echo '</div>';
    echo $after_widget;
 }
