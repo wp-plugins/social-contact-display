@@ -115,6 +115,9 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 = 1.2.5 =
 * Minor fix for some themes
 
+= 1.2.6 =
+* Added style option for Facebook buttons
+
 
 
 

@@ -1,3 +1,4 @@
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -7,4 +8,4 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="fb-like" data-href="<?php bloginfo('url'); ?>" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+<?php include_once "facebooklikestyle.php" ?>

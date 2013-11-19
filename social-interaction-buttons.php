@@ -14,11 +14,13 @@ function form($instance) {
 if( $instance) {
      $twitteracc = esc_attr($instance['twitteracc']);
 	 $facebooklike = esc_attr($instance['facebooklike']);
+	 $facebooklikestyle = esc_attr($instance['facebooklikestyle']);
 	 $googleplus = esc_attr($instance['googleplus']);
 
 } else {
      $twitteracc = '';
 	 $facebooklike = '';
+	 $facebooklikestyle = '';
 	 $googleplus = '';
 
 }
@@ -36,6 +38,19 @@ if( $instance) {
 Do you want to include Facebook Like and Share?<br />
 <input id="<?php echo $this->get_field_id('facebooklike'); ?>" name="<?php echo $this->get_field_name('facebooklike'); ?>" type="checkbox" value="1" <?php checked( '1', $facebooklike ); ?> />
 <label for="<?php echo $this->get_field_id('facebooklike'); ?>"><?php _e('', 'wp_widget_plugin'); ?></label>
+<br />
+
+<label for="<?php echo $this->get_field_id('facebooklikestyle'); ?>"><?php _e('Style', 'wp_widget_plugin'); ?></label>
+<select name="<?php echo $this->get_field_name('facebooklikestyle'); ?>" id="<?php echo $this->get_field_id('facebooklikestyle'); ?>" class="widefat">
+<?php
+$options = array('Standard', 'Box Count');
+foreach ($options as $option) {
+echo '<option value="' . $option . '" id="' . $option . '"', $facebooklikestyle == $option ? ' selected="facebooklikestyle"' : '', '>', $option, '</option>';
+}
+?>
+</select>
+
+
 </p>
 <hr>
 <h3>Google+</h3>
@@ -55,6 +70,7 @@ function update($new_instance, $old_instance) {
       // Fields
       $instance['twitteracc'] = strip_tags($new_instance['twitteracc']);
 	  $instance['facebooklike'] = strip_tags($new_instance['facebooklike']);
+	  $instance['facebooklikestyle'] = strip_tags($new_instance['facebooklikestyle']);
 	  $instance['googleplus'] = strip_tags($new_instance['googleplus']);
      return $instance;
 }
@@ -65,6 +81,7 @@ function widget($args, $instance) {
    // these are the widget options
    $twitteracc = apply_filters('widget_title', $instance['twitteracc']);
    $facebooklike = $instance['facebooklike'];
+   $facebooklikestyle = $instance['facebooklikestyle'];
    $googleplus = $instance['googleplus'];
 
    echo $before_widget;
