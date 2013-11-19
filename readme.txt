@@ -11,7 +11,7 @@ Social Contact Display Widget
 
 == Description ==
 
-Homepage Technologies have created a simple social contact display widget for your WordPress website. A very simple user interface allows you to easily update both your business address and your social media sites, including Facebook, Twitter, LinkedIn, Google Plus and Pinterest. The widget is modular, so you can choice which options you want to display.
+Homepage Technologies have created a simple social contact display widget for your WordPress website. A very simple user interface allows you to easily update both your business address and your social media sites, including Facebook, Twitter, LinkedIn, Google Plus and Pinterest. The widget is modular, so you can choose which options you want to display.
 
 You also have the choice of social media icons to work with your background colour and the widget inherits your sites CSS.
 
@@ -55,25 +55,49 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 
 == Changelog ==
 
-= 0.1 =
-* Initial build
+= 1.2.8 =
+* Added "Button Count" style option for Facebook buttons
+* Added optional Twitter followers count
 
-= 0.2 =
-* Added optional light or dark icon set
+= 1.2.7 =
+* Removed Coral CDN - unfortunately it was not up to the job and was quite slow..
 
-= 1.0 =
-* Version 1 release
-* Changed file structure
-* Added new icon set "Cute"
+= 1.2.6 =
+* Added style option for Facebook buttons
 
-= 1.0.1 =
-* Minor code changes
+= 1.2.5 =
+* Minor fix for some themes
 
-= 1.0.2 =
-* Added new icon set "Shaded"
+= 1.2.4 =
+* Moved all images on to our content delivery network using <a href="http://www.coralcdn.org/">Coral CDN</a>
 
-= 1.0.3 =
-* Added new icon set "Simple Flat" 
+= 1.2.3 =
+* Added pure HTML5 and CSS3 social media icon set based on Entypo fonts
+
+= 1.2.2 =
+* Added pure HTML5 and CSS3 social media icon set based on IcoMoon fonts
+
+= 1.2.1 =
+* Added social media icon title (Connect with us)
+
+= 1.2 =
+* "Social Interaction Buttons" widget now has Twitter, Facebook and Google+ buttons
+
+= 1.0.9 =
+* Added Facebook Like and Share to "Social Interaction Buttons"
+
+= 1.0.8 =
+* Added new widget "Social Interaction Buttons" - Currently adds a Twitter follow button
+
+= 1.0.7 =
+* Added new icon set "Wooden" - http://tinyurl.com/qhr8tpw 
+* Added new icon set "Modern Flat" - <a href="http://jamesw182.co.uk/">Designed by James White</a>
+
+= 1.0.6 =
+* Added new icon set "Vintage"
+
+= 1.0.5 =
+* Added email encryption using WordPress antibot
 
 = 1.0.4 =
 * Changed file structure
@@ -81,49 +105,65 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 * Updated icon sets for future additional Social Media sites
 * Added new icon set "Circle"
 
-= 1.0.5 =
-* Added email encryption using WordPress antibot
+= 1.0.3 =
+* Added new icon set "Simple Flat" 
 
-= 1.0.6 =
-* Added new icon set "Vintage"
+= 1.0.2 =
+* Added new icon set "Shaded"
 
-= 1.0.7 =
-* Added new icon set "Wooden" - http://tinyurl.com/qhr8tpw 
-* Added new icon set "Modern Flat" - <a href="http://jamesw182.co.uk/">Designed by James White</a>
+= 1.0.1 =
+* Minor code changes
 
-= 1.0.8 =
-* Added new widget "Social Interaction Buttons" - Currently adds a Twitter follow button
+= 1.0 =
+* Version 1 release
+* Changed file structure
+* Added new icon set "Cute"
 
-= 1.0.9 =
-* Added Facebook Like and Share to "Social Interaction Buttons"
+= 0.2 =
+* Added optional light or dark icon set
 
-= 1.2 =
-* "Social Interaction Buttons" widget now has Twitter, Facebook and Google+ buttons
+= 0.1 =
+* Initial build
 
-= 1.2.1 =
-* Added social media icon title (Connect with us)
 
-= 1.2.2 =
-* Added pure HTML5 and CSS3 social media icon set based on IcoMoon fonts
 
-= 1.2.3 =
-* Added pure HTML5 and CSS3 social media icon set based on Entypo fonts
 
-= 1.2.4 =
-* Moved all images on to our content delivery network using <a href="http://www.coralcdn.org/">Coral CDN</a>
 
-= 1.2.5 =
-* Minor fix for some themes
 
-= 1.2.6 =
-* Added style option for Facebook buttons
 
-= 1.2.7 =
-* Removed Coral CDN - unfortunately it was not up to the job and was quite slow..
 
-= 1.2.8 =
-* Added "Button Count" style option for Facebook buttons
-* Added optional Twitter followers count
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
