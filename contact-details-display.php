@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.homepage-technologies.co.uk/contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple display widget
-Version: 1.2.9
+Version: 1.3
 Author: HPTOnline (Ian Norris, James White)
 License: GPL2
 */
@@ -29,6 +29,8 @@ if( $instance) {
 	 $county = esc_attr($instance['county']);
 	 $pcode = esc_attr($instance['pcode']);
 	 $telephone = esc_attr($instance['telephone']);
+	 $mobile = esc_attr($instance['mobile']);
+	 $fax = esc_attr($instance['fax']);
 	 $email = esc_attr($instance['email']);
 	 $socialiconstitle = esc_attr($instance['socialiconstitle']);
 	 $facebook = esc_attr($instance['facebook']);
@@ -38,6 +40,7 @@ if( $instance) {
 	 $dribble = esc_attr($instance['dribble']);
 	 $youtube = esc_attr($instance['youtube']);
 	 $pinterest = esc_attr($instance['pinterest']);
+	 $instagram = esc_attr($instance['instagram']);
 	 $select = esc_attr($instance['select']);
 } else {
      $title = '';
@@ -47,6 +50,8 @@ if( $instance) {
 	 $county = '';
 	 $pcode = '';
 	 $telephone = '';
+	 $mobile = '';
+	 $fax = '';
 	 $email = '';
 	 $socialiconstitle = '';
 	 $facebook = '';
@@ -56,6 +61,7 @@ if( $instance) {
 	 $dribble = '';
 	 $youtube = '';
 	 $pinterest = '';
+	 $instagram = '';
 	 $select = '';
 }
 ?>
@@ -91,8 +97,18 @@ if( $instance) {
 </p>
 
 <p>
-<label for="<?php echo $this->get_field_id('telephone'); ?>"><?php _e('Telephone:', 'wp_widget_plugin'); ?></label>
+<label for="<?php echo $this->get_field_id('telephone'); ?>"><?php _e('Telephone (Can also add a prefix e.g. Tel:):', 'wp_widget_plugin'); ?></label>
 <input class="widefat" id="<?php echo $this->get_field_id('telephone'); ?>" name="<?php echo $this->get_field_name('telephone'); ?>" type="text" value="<?php echo $telephone; ?>" />
+</p>
+
+<p>
+<label for="<?php echo $this->get_field_id('mobile'); ?>"><?php _e('Mobile (Can also add a prefix e.g. Mob:):', 'wp_widget_plugin'); ?></label>
+<input class="widefat" id="<?php echo $this->get_field_id('mobile'); ?>" name="<?php echo $this->get_field_name('mobile'); ?>" type="text" value="<?php echo $mobile; ?>" />
+</p>
+
+<p>
+<label for="<?php echo $this->get_field_id('fax'); ?>"><?php _e('Fax (Can also add a prefix e.g. Fax:):', 'wp_widget_plugin'); ?></label>
+<input class="widefat" id="<?php echo $this->get_field_id('fax'); ?>" name="<?php echo $this->get_field_name('fax'); ?>" type="text" value="<?php echo $fax; ?>" />
 </p>
 
 <p>
@@ -138,6 +154,11 @@ if( $instance) {
 </p>
 
 <p>
+<label for="<?php echo $this->get_field_id('instagram'); ?>"><?php _e('Instagram URL:', 'wp_widget_plugin'); ?></label>
+<input class="widefat" id="<?php echo $this->get_field_id('instagram'); ?>" name="<?php echo $this->get_field_name('instagram'); ?>" type="text" value="<?php echo $instagram; ?>" />
+</p>
+
+<p>
 <label for="<?php echo $this->get_field_id('select'); ?>"><?php _e('Select', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 <?php
@@ -171,6 +192,8 @@ function update($new_instance, $old_instance) {
 	  $instance['county'] = strip_tags($new_instance['county']);
 	  $instance['pcode'] = strip_tags($new_instance['pcode']);
 	  $instance['telephone'] = strip_tags($new_instance['telephone']);
+	  $instance['mobile'] = strip_tags($new_instance['mobile']);
+	  $instance['fax'] = strip_tags($new_instance['fax']);
 	  $instance['email'] = strip_tags($new_instance['email']);
 	  $instance['socialiconstitle'] = strip_tags($new_instance['socialiconstitle']);
 	  $instance['facebook'] = strip_tags($new_instance['facebook']);
@@ -180,6 +203,7 @@ function update($new_instance, $old_instance) {
 	  $instance['dribble'] = strip_tags($new_instance['dribble']);
 	  $instance['youtube'] = strip_tags($new_instance['youtube']);
 	  $instance['pinterest'] = strip_tags($new_instance['pinterest']);
+	  $instance['instagram'] = strip_tags($new_instance['instagram']);
 	  $instance['select'] = strip_tags($new_instance['select']);
      return $instance;
 }
@@ -195,6 +219,8 @@ function widget($args, $instance) {
    $county = $instance['county'];
    $pcode = $instance['pcode'];
    $telephone = $instance['telephone'];
+   $mobile = $instance['mobile'];
+   $fax = $instance['fax'];
    $email = $instance['email'];
    $socialiconstitle = $instance['socialiconstitle'];
    $facebook = $instance['facebook'];
@@ -204,49 +230,46 @@ function widget($args, $instance) {
    $dribble = $instance['dribble'];
    $youtube = $instance['youtube'];
    $pinterest = $instance['pinterest'];
+   $instagram = $instance['instagram'];
    $select = $instance['select'];
 
    echo $before_widget;
    // Display the widget
    echo '<div class="widget-text wp_widget_plugin_box" style:>';
 
-   // Check if title is set
    if ( $title ) {
       echo '<strong>' . $title .'</strong></td></tr><br /><br />';
    }
-
-   // Check if addresslineone is set
    if( $addresslineone ) {
       echo ''.$addresslineone.'<br />';
    }
-   // Check if addresslinetwo is set
    if( $addresslinetwo ) {
      echo ''.$addresslinetwo.'<br />';
    }
-   // Check if city is set
    if( $city ) {
      echo ''.$city.'<br />';
    }
-   // Check if county is set
    if( $county ) {
      echo ''.$county.'<br />';
    }
-   // Check if pcode is set
    if( $pcode ) {
      echo ''.$pcode.'<br />';
 	 }
  	 if($pcode=="" ) {
 		echo '<p></p>';
    }
-   // Check if telephone is set
    if( $telephone ) {
-     echo '<br />'.$telephone.'<br />';
+     echo '<br />'.$telephone.'';
    }
-   // Check if email is set
+   if( $mobile ) {
+     echo '<br />'.$mobile.'';
+   }
+   if( $fax ) {
+     echo '<br />'.$fax.'';
+   }
    if( $email ) {
-     echo '<br /><a href="mailto:' . antispambot($email) .'">' . antispambot($email) . '</a><br />';
+     echo '<br /><br /><a href="mailto:' . antispambot($email) .'">' . antispambot($email) . '</a><br />';
    }
-   // Check if socialicontitle is set
    if( $socialiconstitle ) {
      echo '<br /><strong>' . $socialiconstitle . '</strong><br /><br />';
    }
