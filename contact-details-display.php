@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.homepage-technologies.co.uk/contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple display widget
-Version: 1.3
+Version: 1.3.1
 Author: HPTOnline (Ian Norris, James White)
 License: GPL2
 */
@@ -162,7 +162,7 @@ if( $instance) {
 <label for="<?php echo $this->get_field_id('select'); ?>"><?php _e('Select', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 <?php
-$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Retro', 'Retro 2', 'Wooden', 'CSS and HTML5 set 1', 'CSS and HTML5 set 2');
+$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Retro', 'Retro 2', 'Retro Circle', 'Wooden', 'CSS and HTML5 set 1', 'CSS and HTML5 set 2');
 foreach ($options as $option) {
 echo '<option value="' . $option . '" id="' . $option . '"', $select == $option ? ' selected="select"' : '', '>', $option, '</option>';
 }
@@ -316,7 +316,10 @@ function widget($args, $instance) {
 		}	
 	elseif ( $select == 'Retro 2' ) {
 		include_once "includes/retro2.php";
-		}		
+		}	
+	elseif ( $select == 'Retro Circle' ) {
+		include_once "includes/retrocircle.php";
+		}	
 		
    echo '</div>';
    echo $after_widget;

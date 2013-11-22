@@ -1,19 +1,19 @@
 === Plugin Name ===
 Contributors: hptonline
-Tags: social, contact, widget, social media, facebook, google plus, google, twitter, linkedin, youtube, pinterest, social media icons, social share, css, html5
+Tags: social, contact, widget, social media, facebook, google plus, google, twitter, linkedin, youtube, pinterest, instagram, social media icons, social share, css, html5
 Requires at least: 3.0.1
 Tested up to: 3.7.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 1.3
+Stable Tag: 1.3.1
 
 Social Contact Display Widget
 
 == Description ==
 
-Homepage Technologies have created a simple social contact display widget for your WordPress website. A very simple user interface allows you to easily update both your business address and your social media sites, including Facebook, Twitter, LinkedIn, Google Plus and Pinterest. The widget is modular, so you can choose which options you want to display.
+Homepage Technologies have created a simple social contact display widget for your WordPress website. A very simple user interface allows you to easily update both your business address and your social media sites, including Facebook, Twitter, LinkedIn, Google Plus, Pinterest and Instagram. The widget is modular, so you can choose which options you want to display.
 
-You currently have 13 <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/social-media-icons/">Social Media Icon Sets</a> to choose from and the list is being added to all the time.
+You currently have 14 <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/social-media-icons/">Social Media Icon Sets</a> to choose from and the list is being added to all the time.
 
 We have also recently added lightweight pure HTML5 and CSS3 social media icon sets.
 
@@ -41,6 +41,7 @@ Twitter
 LinkedIn
 YouTube
 Pinterest
+Instagram
 
 = I have a suggestion for the plugin, where can I submit it? =
 
@@ -55,11 +56,14 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 
 == Changelog ==
 
+= 1.3.1 =
+* Added new social media icon set - Retro Circle http://tinyurl.com/qhr8tpw 
+
 = 1.3 =
 * Added options for Mobile, Fax and Instagram as per user requests
 
 = 1.2.9 =
-* Added 2 more social media icon sets - Retro 1 and Retro 2 http://tinyurl.com/qhr8tpw 
+* Added 2 more social media icon sets - Retro 1 and Retro 2 
 
 = 1.2.8 =
 * Added "Button Count" style option for Facebook buttons
