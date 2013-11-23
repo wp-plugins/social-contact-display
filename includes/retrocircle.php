@@ -1,9 +1,9 @@
 <?php
    if( $facebook ) {
-    echo '<a href="'.$facebook.'" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/retrocircle/pink/48_48/facebook_1.png" height="38" width="37" ></a>&nbsp;';
+    echo '<a href="'.$facebook.'" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/retrocircle/pink/48_48/facebook_2.png" height="38" width="37" ></a>&nbsp;';
    }
   if( $twitter ) {
-     echo '<a href="'.$twitter.'" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/retrocircle/pink/48_48/twitter.png" height="38" width="37" ></a>&nbsp;';
+     echo '<a href="'.$twitter.'" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/retrocircle/pink/48_48/twitter_2.png" height="38" width="37" ></a>&nbsp;';
    }
    if( $gplus ) {
      echo '<a href="'.$gplus.'" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/retrocircle/pink/48_48/google_plus.png" height="38" width="37" ></a>&nbsp;';
