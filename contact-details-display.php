@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.homepage-technologies.co.uk/contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple display widget
-Version: 1.3.2
+Version: 1.3.3
 Author: HPTOnline (Ian Norris, James White)
 License: GPL2
 */
@@ -162,7 +162,7 @@ if( $instance) {
 <label for="<?php echo $this->get_field_id('select'); ?>"><?php _e('Select', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 <?php
-$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Retro', 'Retro 2', 'Retro Circle', 'Wooden', 'CSS and HTML5 set 1', 'CSS and HTML5 set 2', 'Paper Flowers');
+$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Retro', 'Retro 2', 'Retro Circle', 'Wooden', 'CSS and HTML5 set 1', 'CSS and HTML5 set 2', 'Paper Flowers', 'Ribbon');
 foreach ($options as $option) {
 echo '<option value="' . $option . '" id="' . $option . '"', $select == $option ? ' selected="select"' : '', '>', $option, '</option>';
 }
@@ -322,7 +322,10 @@ function widget($args, $instance) {
 		}	
 	elseif ( $select == 'Paper Flowers' ) {
 		include_once "includes/paperflowers.php";
-		}	
+		}
+	elseif ( $select == 'Ribbon' ) {
+		include_once "includes/ribbon.php";
+		}		
 		
    echo '</div>';
    echo $after_widget;

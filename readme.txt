@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.7.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 1.3.2
+Stable Tag: 1.3.3
 
 Social Contact Display Widget
 
@@ -56,11 +56,14 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 
 == Changelog ==
 
+= 1.3.3 =
+* Added new social media icon set - Ribbon http://tinyurl.com/qhr8tpw 
+
 = 1.3.2 =
 * Added new social media icon set - Paper Flowers
 
 = 1.3.1 =
-* Added new social media icon set - Retro Circle http://tinyurl.com/qhr8tpw 
+* Added new social media icon set - Retro Circle 
 
 = 1.3 =
 * Added options for Mobile, Fax and Instagram as per user requests
