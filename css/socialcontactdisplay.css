@@ -260,6 +260,29 @@ div.hpt-social-github:before {
 }
 /* Variations:  "\e01e" "\e01f" "\e020" "\e021" "\e022" */
 
+.widget.widget_social_contact_display a.social {
+text-decoration: none !important; 
+}
+
+.widget.widget_social_contact_display a.social:hover {
+color: #ffffff !important; 
+}
+
+.widget.widget_social_contact_display a.social:visted {
+color: #ffffff !important; 
+}
+
+.widget.widget_simple_social_contact_display a.social {
+text-decoration: none !important; 
+}
+
+.widget.widget_simple_social_contact_display a.social:hover {
+color: #ffffff !important; 
+}
+
+.widget.widget_simple_social_contact_display a.social:visted {
+color: #ffffff !important; 
+}
 
 
 

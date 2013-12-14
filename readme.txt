@@ -1,11 +1,11 @@
 === Plugin Name ===
 Contributors: hptonline
-Tags: social, contact, widget, social media, facebook, google plus, google, twitter, linkedin, youtube, pinterest, instagram, social media icons, social share, css, html5
+Tags: social, contact, widget, social media, facebook, google plus, google, twitter, linkedin, youtube, pinterest, instagram, social media icons, social share, css, html5, google map
 Requires at least: 3.0.1
-Tested up to: 3.7.1
-License: GPLv2
+Tested up to: 3.8
+License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 1.3.3
+Stable Tag: 2.0
 
 Social Contact Display Widget
 
@@ -29,11 +29,24 @@ Check out a demo: <a href="http://demo.homepage-technologies.co.uk/contact-displ
 
 == Frequently Asked Questions ==
 
+= What has changed in Version 2? =
+
+We have added a more advanced set of widgets. The options are entered via the settings page under "SCD Settings". We have kept the original widget but renamed it as "Simple Social Contact Display". This should keep all of your previous options, but you will need to re-add the widget itself.
+
+Also added is a Google Map option. This is a static map, for now, and coordinates will need to be entered - <a href="https://support.google.com/maps/answer/18539?hl=en" target="_blank" >How to get coordinates</a>.
+
+= What are the short codes? =
+
+Contact Details/Social Media - [scd_social_contact_display]
+Social Sharing - [scd_social_share]
+Google Map - [scd_google_static_map]
+
+
 = Where can I enter my contact information? =
 
 Within the widget itself.
 
-= Which Social Media sites are currently suported? =
+= Which Social Media sites are currently supported? =
 
 Facebook
 Google+
@@ -45,7 +58,7 @@ Instagram
 
 = I have a suggestion for the plugin, where can I submit it? =
 
-Etiher via the support tab, or via our site:
+Either via the support tab, or via our site:
 
 http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion/
 
@@ -55,6 +68,14 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 2. "Social Interaction Buttons" widget
 
 == Changelog ==
+
+= 2.0.0 =
+* This is a major upgrade - please see the FAQ for more information
+* Moved options to their own pages
+* Moved original widget to "Simple Social Contact Display" widget
+* Google Static Map added
+* Shotcodes added for all options
+* Pinterest added to Social Interaction widget
 
 = 1.3.3 =
 * Added new social media icon set - Ribbon http://tinyurl.com/qhr8tpw 
