@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.homepage-technologies.co.uk/social-contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple widget or shortcode. Important! Please read the FAQ when upgrading from version 1.
-Version: 2.0
+Version: 2.0.1
 Author: HPTOnline (Ian Norris, James White)
 License: GPL2+
 Author URI: http://www.hptonline.co.uk
