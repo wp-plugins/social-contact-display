@@ -135,8 +135,8 @@ add_action('init', 'register_style');
 
 function register_style(){
 
-    wp_register_style( 'social_contact_display', plugins_url('/css/socialcontactdisplay.css', __FILE__));
-	wp_register_style( 'entypo', plugins_url('/css/entypo.css', __FILE__));
+    wp_register_style( 'social_contact_display', plugins_url('/lib/css/socialcontactdisplay.css', __FILE__));
+	wp_register_style( 'entypo', plugins_url('/lib/css/entypo.css', __FILE__));
 }
 
 // use the registered style above
@@ -161,7 +161,7 @@ function scd_get_global_options(){
         'scd_options',   
         'scd_options_two_social_media',   
         'scd_options_two_social_share',
-		'scd_options_google_map'	
+		'scd_options_two_google_map'	
     );  
   
     // loop for get_option  

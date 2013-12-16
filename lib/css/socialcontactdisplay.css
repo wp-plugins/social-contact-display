@@ -85,8 +85,8 @@ color: #ffffff
 /*** IconMoon ***/
 @font-face {
   font-family: 'IcomoonSocial';
-  src: url('../fonts/IcomoonSocial.eot');
-  src: url('../fonts/IcomoonSocial.eot?#iefix') format('embedded-opentype'), url('../fonts/IcomoonSocial.woff') format('woff'), url('../fonts/IcomoonSocial.ttf') format('truetype'), url('../fonts/IcomoonSocial.svg#IcomoonSocial') format('svg');
+  src: url('../lib/fonts/IcomoonSocial.eot');
+  src: url('../lib/fonts/IcomoonSocial.eot?#iefix') format('embedded-opentype'), url('../lib/fonts/IcomoonSocial.woff') format('woff'), url('../lib/fonts/IcomoonSocial.ttf') format('truetype'), url('../lib/fonts/IcomoonSocial.svg#IcomoonSocial') format('svg');
   font-weight: normal;
   font-style: normal;
   -webkit-font-smoothing: antialiased;

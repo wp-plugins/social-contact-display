@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.8
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.0
+Stable Tag: 2.0.2
 
 Social Contact Display Widget
 
@@ -68,6 +68,12 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 2. "Social Interaction Buttons" widget
 
 == Changelog ==
+
+= 2.0.2 =
+* Fixed Google Map issue
+
+= 2.0.1 =
+* Minor update to fix an issue with headers
 
 = 2.0.0 =
 * This is a major upgrade - please see the FAQ for more information
