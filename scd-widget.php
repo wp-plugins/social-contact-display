@@ -158,7 +158,7 @@ function scd_get_global_options(){
   
     // collect option names as declared in scd_get_settings()  
     $scd_option_names = array (  
-        'scd_options',   
+        'scd_options_two',   
         'scd_options_two_social_media',   
         'scd_options_two_social_share',
 		'scd_options_two_google_map'	
