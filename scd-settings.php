@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.homepage-technologies.co.uk/social-contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple widget or shortcode. Important! Please read the FAQ when upgrading from version 1.
-Version: 2.0.3
+Version: 2.0.4
 Author: HPTOnline (Ian Norris, James White)
 License: GPL2+
 Author URI: http://www.hptonline.co.uk
@@ -480,18 +480,6 @@ function scd_validate_options($input) {
 							$input[$option['id']] 		= trim($input[$option['id']]); // trim whitespace
 							if($input[$option['id']] != ''){
 								$valid_input[$option['id']] = (is_email($input[$option['id']])!== FALSE) ? $input[$option['id']] : __('Invalid email! Please re-enter!','scd_textdomain');
-							}elseif($input[$option['id']] == ''){
-								$valid_input[$option['id']] = __('This setting field cannot be empty! Please enter a valid email address.','scd_textdomain');
-							}
-							
-							// register error
-							if(is_email($input[$option['id']])== FALSE || $input[$option['id']] == '') {
-								add_settings_error(
-									$option['id'], // setting title
-									SCD_SHORTNAME . '_txt_email_error', // error ID
-									__('Please enter a valid email address.','scd_textdomain'), // error message
-									'error' // type of message
-								);
 							}
 						break;
 						

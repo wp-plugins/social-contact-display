@@ -162,7 +162,7 @@ function scd_options_two_page_fields() {
 		"desc"    => __( 'A text input field which can be used for email input.', 'scd_textdomain' ),
 		"type"    => "text",
 		"std"     => "email@email.com",
-		"class"   => "email"
+//		"class"   => "email"
 	);
 		break;
 	
