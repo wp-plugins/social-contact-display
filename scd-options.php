@@ -7,6 +7,7 @@ function scd_options_two_page_tabs() {
 	
 	$tabs = array();
 	
+	$tabs['info'] 	= __('Info', 'scd');
 	$tabs['contact-details'] 	= __('Contact Details', 'scd');	
 	$tabs['social-media'] 	= __('Social Media', 'scd');	
 	$tabs['social-share'] 		= __('Social Sharing', 'scd');
@@ -29,6 +30,12 @@ function scd_options_two_page_sections() {
 
 	// switch sections array according to tab
 	switch ($tab) {
+		//Info
+		case 'info':
+			$sections = array();
+			$sections['txt_section'] 		= __('Info', 'scd_textdomain');
+		break;
+		
 		//Contact Details
 		case 'contact-details':
 			$sections = array();
@@ -50,7 +57,7 @@ function scd_options_two_page_sections() {
 			$sections['social_interaction_pinterest_section'] 	= __('<div id="socialshareadmin">Pinterest</div>', 'scd_textdomain');
 		break;
 		
-		// Social Sharing
+		// Google Map
         case 'google-map':
 			$sections = array();
 			$sections['google_map_section'] 	= __('Static Google Map Image Settings', 'scd_textdomain');

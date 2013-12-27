@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.homepage-technologies.co.uk/social-contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple widget or shortcode. Important! Please read the FAQ when upgrading from version 1.
-Version: 2.0.5
+Version: 2.0.6
 Author: HPTOnline (Ian Norris, James White)
 License: GPL2+
 Author URI: http://www.hptonline.co.uk
@@ -252,7 +252,10 @@ function  scd_section_fn($desc) {
 		}
 	elseif ($tab == 'social-share') {
 		echo "<p>" . __('Widget for this section is: <strong>Social Interaction Buttons</strong><br>Shortcode for this section is: <strong>[scd_social_share]</strong>','scd_textdomain') . "</p>";
-		}	
+		}
+	elseif ($tab =='info') {
+		echo "<p>" . __('<strong>What has changed in Version 2?</strong><br><br>We have added a more advanced set of widgets. The options are entered via the settings page under "SCD Settings". We have kept the original widget but renamed it as "Simple Social Contact Display". This should keep all of your previous options, but you will need to re-add the widget itself.<br><br>Also added is a Google Map option. This is a static map, for now, and coordinates will need to be entered - How to get coordinates.<br><br><strong>What are the short codes?</strong><br><br>Contact Details/Social Media - [scd_social_contact_display]<br> Social Sharing - [scd_social_share]<br> Google Map - [scd_google_static_map]<br><br><strong>Which Social Media sites are currently supported?</strong><br><br>Facebook Google+ Twitter LinkedIn YouTube Pinterest Instagram<br><br><strong>I have a suggestion for the plugin, where can I submit it?</strong><br><br>Either via the support tab, or via our site:<br><a href="http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion/" target="_blank" >Homepage Technologies</a>') . "</p>";
+		} 
 }
 
 /*
