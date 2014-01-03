@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.8
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.0.6
+Stable Tag: 2.0.7
 
 Social Contact Display Widget
 
@@ -69,8 +69,11 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 
 == Changelog ==
 
+== 2.0.7 =
+* Added RSS option for Social Media Links - as per user request
+
 = 2.0.6 =
-* Added info tab with plugin information and guide.
+* Added info tab with plugin information and guide
 
 = 2.0.5 =
 *Fixed issue with adding social media URL's in the simple widget

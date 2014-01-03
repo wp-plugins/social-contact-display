@@ -32,6 +32,7 @@ if( $instance) {
 	 $youtube = esc_attr($instance['youtube']);
 	 $pinterest = esc_attr($instance['pinterest']);
 	 $instagram = esc_attr($instance['instagram']);
+	 $rssfeed = esc_attr($instance['rssfeed']);
 	 $select = esc_attr($instance['select']);
 } else {
      $title = '';
@@ -53,6 +54,7 @@ if( $instance) {
 	 $youtube = '';
 	 $pinterest = '';
 	 $instagram = '';
+	 $rssfeed = '';
 	 $select = '';
 }
 ?>
@@ -150,6 +152,12 @@ if( $instance) {
 </p>
 
 <p>
+<input id="<?php echo $this->get_field_id('rssfeed'); ?>" name="<?php echo $this->get_field_name('rssfeed'); ?>" type="checkbox" value="1" <?php checked( '1', $rssfeed ); ?> />
+<label for="<?php echo $this->get_field_id('rssfeed'); ?>"><?php _e('Include RSS feed', 'wp_widget_plugin'); ?></label>
+</p>
+
+
+<p>
 <label for="<?php echo $this->get_field_id('select'); ?>"><?php _e('Select', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 <?php
@@ -195,6 +203,7 @@ function update($new_instance, $old_instance) {
 	  $instance['youtube'] = strip_tags($new_instance['youtube']);
 	  $instance['pinterest'] = strip_tags($new_instance['pinterest']);
 	  $instance['instagram'] = strip_tags($new_instance['instagram']);
+	  $instance['rssfeed'] = strip_tags($new_instance['rssfeed']);
 	  $instance['select'] = strip_tags($new_instance['select']);
      return $instance;
 }
@@ -222,6 +231,7 @@ function widget($args, $instance) {
    $youtube = $instance['youtube'];
    $pinterest = $instance['pinterest'];
    $instagram = $instance['instagram'];
+   $rssfeed = $instance['rssfeed'];
    $select = $instance['select'];
 
    echo $before_widget;

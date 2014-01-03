@@ -256,6 +256,15 @@ function scd_options_two_page_fields() {
 	
 	$options[] = array(
 		"section" => "socialmedia_section",
+		"id"      => SCD_SHORTNAME . "_rss_checkbox",
+		"title"   => __( 'Include RSS feed icon.', 'scd_textdomain' ),
+		"desc"    => __( '', 'scd_textdomain' ),
+		"type"    => "checkbox",
+		"std"     => 0
+	);
+	
+	$options[] = array(
+		"section" => "socialmedia_section",
 		"id"      => SCD_SHORTNAME . "_select_input",
 		"title"   => __( 'Social Media Icon Set:', 'scd_textdomain' ),
 		"desc"    => __( 'Samples can be found <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/social-media-icons/" target="_blank" >on our site</a>', 'scd_textdomain' ),
