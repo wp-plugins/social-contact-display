@@ -69,7 +69,7 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 
 == Changelog ==
 
-== 2.0.7 =
+= 2.0.7 =
 * Added RSS option for Social Media Links - as per user request
 
 = 2.0.6 =
