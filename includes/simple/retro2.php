@@ -21,5 +21,8 @@ require_once('cleanurl.php');
    }
    if( $instagram ) {
      echo '<a href="'.addScheme($instagram).'" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/retro2/instagram.png" height="38" width="37" ></a>&nbsp;';
-   }   
+   }
+	if( $rssfeed ) {
+     echo '<a href="'?><?php bloginfo('rss2_url'); ?><?php echo '" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/retro2/rss-icon.png" height="38" width="37" ></a>&nbsp;';
+   }
 ?>

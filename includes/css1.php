@@ -17,4 +17,7 @@
    if( $scd_option['scd_url_txt_pinterest'] ) {
      echo '<div class="hpt-social-pinterest"><a href="'.$pinterest.'" target="_blank" class="social"></a></div>&nbsp;';
    }   
+   if( $$scd_option['scd_rss_checkbox'] ) {
+     echo '<div class="hpt-social-rss"><a href="'?><?php bloginfo('rss2_url'); ?><?php echo '" target="_blank" class="social"></a></div>&nbsp;';
+   }
 ?>

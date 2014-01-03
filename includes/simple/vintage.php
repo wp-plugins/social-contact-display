@@ -20,4 +20,7 @@ require_once('cleanurl.php');
    if( $pinterest ) {
      echo '<a href="'.addScheme($pinterest).'" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/vintage/pinterest.png" height="38" width="37" ></a>&nbsp;';
    }   
+   if( $rssfeed ) {
+     echo '<a href="'?><?php bloginfo('rss2_url'); ?><?php echo '" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/vintage/rss.png" height="38" width="37" ></a>&nbsp;';
+   }
 ?>

@@ -20,4 +20,7 @@
    if( $scd_option['scd_url_txt_instagram'] ) {
      echo '<a href="'.$scd_option['scd_url_txt_instagram'].'" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/simple-flat/instagram.png" height="38" width="37" ></a>&nbsp;';
    }   
+   if( $scd_option['scd_rss_checkbox'] ) {
+     echo '<a href="'?><?php bloginfo('rss2_url'); ?><?php echo '" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/simple-flat/rss.png" height="38" width="37" ></a>&nbsp;';
+   }
 ?>

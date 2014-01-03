@@ -17,5 +17,8 @@
    }
    if( $scd_option['scd_url_txt_pinterest'] ) {
      echo '<a href="'.$scd_option['scd_url_txt_pinterest'].'" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/vintage/pinterest.png" height="38" width="37" ></a>&nbsp;';
-   }   
+   }
+	if( $scd_option['scd_rss_checkbox'] ) {
+     echo '<a href="'?><?php bloginfo('rss2_url'); ?><?php echo '" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/vintage/rss.png" height="38" width="37" ></a>&nbsp;';
+   }
 ?>
