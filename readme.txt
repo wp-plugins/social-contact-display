@@ -1,11 +1,11 @@
 === Plugin Name ===
-Contributors: hptonline
+Contributors: WP Creative
 Tags: social, contact, widget, social media, facebook, google plus, google, twitter, linkedin, youtube, pinterest, instagram, social media icons, social share, css, html5, google map
 Requires at least: 3.0.1
-Tested up to: 3.8
+Tested up to: 3.8.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.0.7
+Stable Tag: 2.0.8
 
 Social Contact Display Widget
 
@@ -13,11 +13,11 @@ Social Contact Display Widget
 
 Homepage Technologies have created a simple social contact display widget for your WordPress website. A very simple user interface allows you to easily update both your business address and your social media sites, including Facebook, Twitter, LinkedIn, Google Plus, Pinterest and Instagram. The widget is modular, so you can choose which options you want to display.
 
-You currently have 15 <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/social-media-icons/">Social Media Icon Sets</a> to choose from and the list is being added to all the time.
+You currently have 15 <a href="http://demo.wp-creative.co.uk/contact-display-widget/social-media-icons/">Social Media Icon Sets</a> to choose from and the list is being added to all the time.
 
 We have also recently added lightweight pure HTML5 and CSS3 social media icon sets.
 
-Check out a demo: <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/">Here</a>
+Check out a demo: <a href="http://demo.wp-creative.co.uk/contact-display-widget/">Here</a>
 
 == Installation ==
 
@@ -60,7 +60,7 @@ Instagram
 
 Either via the support tab, or via our site:
 
-http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion/
+http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 
 == Screenshots ==
 
@@ -68,6 +68,9 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 2. "Social Interaction Buttons" widget
 
 == Changelog ==
+
+= 2.0.8 =
+* Updated the social share buttons to share current page instead of main blog URL - as per user request
 
 = 2.0.7 =
 * Added RSS option for Social Media Links - as per user request
@@ -99,7 +102,7 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 * Pinterest added to Social Interaction widget
 
 = 1.3.3 =
-* Added new social media icon set - Ribbon http://tinyurl.com/qhr8tpw 
+* Added new social media icon set - Ribbon
 
 = 1.3.2 =
 * Added new social media icon set - Paper Flowers
@@ -118,7 +121,7 @@ http://demo.homepage-technologies.co.uk/contact-display-widget/plugin-suggestion
 * Added optional Twitter followers count
 
 = 1.2.7 =
-* Removed Coral CDN - unfortunately it was not up to the job and was quite slow..
+* Removed Coral CDN - unfortunately it was not up to the job and was quite slow.. Moved on to our own CDN server based in Hampshire
 
 = 1.2.6 =
 * Added style option for Facebook buttons
