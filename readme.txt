@@ -5,13 +5,13 @@ Requires at least: 3.0.1
 Tested up to: 3.8.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.0.8
+Stable Tag: 2.0.9
 
 Social Contact Display Widget
 
 == Description ==
 
-Homepage Technologies have created a simple social contact display widget for your WordPress website. A very simple user interface allows you to easily update both your business address and your social media sites, including Facebook, Twitter, LinkedIn, Google Plus, Pinterest and Instagram. The widget is modular, so you can choose which options you want to display.
+WP Creative have created a simple social contact display widget for your WordPress website. A very simple user interface allows you to easily update both your business address and your social media sites, including Facebook, Twitter, LinkedIn, Google Plus, Pinterest and Instagram. The widget is modular, so you can choose which options you want to display.
 
 You currently have 15 <a href="http://demo.wp-creative.co.uk/contact-display-widget/social-media-icons/">Social Media Icon Sets</a> to choose from and the list is being added to all the time.
 
@@ -68,6 +68,9 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 2. "Social Interaction Buttons" widget
 
 == Changelog ==
+
+= 2.0.9 =
+* Fixed issue with the Simple Social Interaction Buttons Facebook share buttons
 
 = 2.0.8 =
 * Updated the social share buttons to share current page instead of main blog URL - as per user request
@@ -151,7 +154,7 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 * Added new widget "Social Interaction Buttons" - Currently adds a Twitter follow button
 
 = 1.0.7 =
-* Added new icon set "Wooden" - http://tinyurl.com/qhr8tpw 
+* Added new icon set "Wooden"
 * Added new icon set "Modern Flat" - <a href="http://jamesw182.co.uk/">Designed by James White</a>
 
 = 1.0.6 =
