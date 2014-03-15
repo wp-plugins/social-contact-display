@@ -43,7 +43,7 @@ function scd_default_tab() {
 	// There may be times when the first tab has a different slug from page to page. Here is where you can override the $default_tab = 'general'; Gives you more control :)
 	// if our current page is the 'scd-settings-page-two' page then set the default tab to 'social-media'
 	if ($current_page == 'scd-settings') {
-		$default_tab = 'contact-details';
+		$default_tab = 'info';
 		
 	// if you have more settings pages with a first tab slug other than "general" continue with an 
 	//}elseif($current_page == 'your-page-slug'){ 

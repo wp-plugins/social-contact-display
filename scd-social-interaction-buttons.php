@@ -7,7 +7,10 @@ function social_interaction_buttons_shortcode(){
 
 $scd_option = scd_get_global_options(); 
    get_option('scd_options');
-   extract( $args );
+      
+	  if( !empty($args) ) {
+	extract( $args );
+	}
    
    echo $before_widget;
    // Display the widget
