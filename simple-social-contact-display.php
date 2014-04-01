@@ -167,7 +167,7 @@ echo '<option value="' . $option . '" id="' . $option . '"', $select == $option 
 }
 ?>
 </select>
-<div style="font-size: 10px">Examples can be found <a href="http://demo.homepage-technologies.co.uk/contact-display-widget/social-media-icons/" target="_blank">here</a>
+<div style="font-size: 10px">Examples can be found <a href="http://demo.wp-creative.co.uk/social-contact-display-widget/social-media-icons/" target="_blank">here</a>
 </div> 
 </p>
 <p>

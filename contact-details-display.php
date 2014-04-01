@@ -153,7 +153,7 @@ if( $instance) {
 <label for="<?php echo $this->get_field_id('select'); ?>"><?php _e('Select', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 <?php
-$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Retro', 'Retro 2', 'Retro Circle', 'Wooden', 'CSS and HTML5 set 1', 'CSS and HTML5 set 2', 'Paper Flowers', 'Ribbon');
+$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Retro', 'Retro 2', 'Retro Circle', 'Wooden', 'CSS and HTML5 set 1', 'CSS and HTML5 set 2', 'Paper Flowers', 'Ribbon', 'Purple Rimmed');
 foreach ($options as $option) {
 echo '<option value="' . $option . '" id="' . $option . '"', $select == $option ? ' selected="select"' : '', '>', $option, '</option>';
 }
@@ -316,7 +316,10 @@ function widget($args, $instance) {
 		}
 	elseif ( $select == 'Ribbon' ) {
 		include_once "includes/ribbon.php";
-		}		
+		}
+	elseif ( $select == 'Purple Rimmed' ) {
+		include_once "includes/purplerimmed.php";
+		}	
 		
    echo '</div>';
    echo $after_widget;

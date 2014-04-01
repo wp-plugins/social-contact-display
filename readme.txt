@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.8.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.1
+Stable Tag: 2.1.1
 
 Social Contact Display Widget
 
@@ -69,7 +69,11 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 
 == Changelog ==
 
-= Fixed an issue for some themes where it gave an error on null values
+= 2.1.1 =
+* Added new Purple Rimmed social media icons
+
+= 2.1 =
+* Fixed an issue for some themes where it gave an error on null values =
 
 = 2.0.9 =
 * Fixed issue with the Simple Social Interaction Buttons Facebook share buttons
