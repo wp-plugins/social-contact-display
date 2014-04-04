@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.8.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.1.1
+Stable Tag: 2.1.2
 
 Social Contact Display Widget
 
@@ -49,8 +49,9 @@ Within the widget itself.
 = Which Social Media sites are currently supported? =
 
 Facebook
-Google+
 Twitter
+Google+
+Tumblr
 LinkedIn
 YouTube
 Pinterest
@@ -68,6 +69,10 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 2. "Social Interaction Buttons" widget
 
 == Changelog ==
+
+= 2.1.2 =
+* Added Tumblr social media icons, currently supported for Cute, Shaded, Simple Flat, Circle, Retro, Retro 2, Retro Circle, Wooden, Paper Flowers and Purple Rimmed, rest to follow - as per user request
+* Added the option to have the social media icons display vertically - as per user request
 
 = 2.1.1 =
 * Added new Purple Rimmed social media icons

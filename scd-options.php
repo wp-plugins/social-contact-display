@@ -216,6 +216,16 @@ function scd_options_two_page_fields() {
 	
 	$options[] = array(
 		"section" => "socialmedia_section",
+		"id"      => SCD_SHORTNAME . "_url_txt_tumblr",
+		"title"   => __( 'Tumblr URL:', 'scd_textdomain' ),
+		"desc"    => __( 'A text input field which can be used for urls.', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => "http://www.tumblr.com",
+		"class"   => "url"
+	);
+	
+	$options[] = array(
+		"section" => "socialmedia_section",
 		"id"      => SCD_SHORTNAME . "_url_txt_linkedin",
 		"title"   => __( 'Linked In URL:', 'scd_textdomain' ),
 		"desc"    => __( 'A text input field which can be used for urls.', 'scd_textdomain' ),
@@ -271,6 +281,15 @@ function scd_options_two_page_fields() {
 		"type"    => "select",
 		"std"    => "Modern Flat",
 		"choices" => array( "Light", "Dark", "Modern Flat", "Cute", "Shaded", "Simple Flat", "Circle", "Vintage", "Retro", "Retro 2", "Retro Circle", "Wooden", "CSS and HTML5 set 1", "CSS and HTML5 set 2", "Paper Flowers", "Purple Rimmed")
+	);
+	
+	$options[] = array(
+		"section" => "socialmedia_section",
+		"id"      => SCD_SHORTNAME . "_vertical_checkbox",
+		"title"   => __( 'Display Social Media Icons vertically?', 'scd_textdomain' ),
+		"desc"    => __( '', 'scd_textdomain' ),
+		"type"    => "checkbox",
+		"std"     => 0
 	);
 		break;
 		

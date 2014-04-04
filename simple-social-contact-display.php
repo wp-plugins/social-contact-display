@@ -27,6 +27,7 @@ if( $instance) {
 	 $facebook = esc_attr($instance['facebook']);
 	 $twitter = esc_attr($instance['twitter']);
 	 $gplus = esc_attr($instance['gplus']);
+	 $tumblr = esc_attr($instance['tumblr']);
 	 $linkedin = esc_attr($instance['linkedin']);
 	 $dribble = esc_attr($instance['dribble']);
 	 $youtube = esc_attr($instance['youtube']);
@@ -34,6 +35,7 @@ if( $instance) {
 	 $instagram = esc_attr($instance['instagram']);
 	 $rssfeed = esc_attr($instance['rssfeed']);
 	 $select = esc_attr($instance['select']);
+	 $vertical = esc_attr($instance['vertical']);
 } else {
      $title = '';
      $addresslineone = '';
@@ -49,6 +51,7 @@ if( $instance) {
 	 $facebook = '';
 	 $twitter = '';
 	 $gplus = '';
+	 $tumblr = '';
 	 $linkedin = '';
 	 $dribble = '';
 	 $youtube = '';
@@ -56,6 +59,7 @@ if( $instance) {
 	 $instagram = '';
 	 $rssfeed = '';
 	 $select = '';
+	 $vertical = '';
 }
 ?>
 
@@ -132,6 +136,11 @@ if( $instance) {
 </p>
 
 <p>
+<label for="<?php echo $this->get_field_id('tumblr'); ?>"><?php _e('Tumblr URL:', 'wp_widget_plugin'); ?></label>
+<input class="widefat" id="<?php echo $this->get_field_id('tumblr'); ?>" name="<?php echo $this->get_field_name('tumblr'); ?>" type="text" value="<?php echo $tumblr; ?>" />
+</p>
+
+<p>
 <label for="<?php echo $this->get_field_id('linkedin'); ?>"><?php _e('Linked In URL:', 'wp_widget_plugin'); ?></label>
 <input class="widefat" id="<?php echo $this->get_field_id('linkedin'); ?>" name="<?php echo $this->get_field_name('linkedin'); ?>" type="text" value="<?php echo $linkedin; ?>" />
 </p>
@@ -161,7 +170,7 @@ if( $instance) {
 <label for="<?php echo $this->get_field_id('select'); ?>"><?php _e('Select', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 <?php
-$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Retro', 'Retro 2', 'Retro Circle', 'Wooden', 'CSS and HTML5 set 1', 'CSS and HTML5 set 2', 'Paper Flowers', 'Ribbon');
+$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Retro', 'Retro 2', 'Retro Circle', 'Wooden', 'CSS and HTML5 set 1', 'CSS and HTML5 set 2', 'Paper Flowers', 'Ribbon', 'Purple Rimmed');
 foreach ($options as $option) {
 echo '<option value="' . $option . '" id="' . $option . '"', $select == $option ? ' selected="select"' : '', '>', $option, '</option>';
 }
@@ -169,6 +178,10 @@ echo '<option value="' . $option . '" id="' . $option . '"', $select == $option 
 </select>
 <div style="font-size: 10px">Examples can be found <a href="http://demo.wp-creative.co.uk/social-contact-display-widget/social-media-icons/" target="_blank">here</a>
 </div> 
+</p>
+<p>
+<input id="<?php echo $this->get_field_id('vertical'); ?>" name="<?php echo $this->get_field_name('vertical'); ?>" type="checkbox" value="1" <?php checked( '1', $vertical ); ?> />
+<label for="<?php echo $this->get_field_id('vertical'); ?>"><?php _e('Display Social Media Icons vertically?', 'wp_widget_plugin'); ?></label>
 </p>
 <p>
 <br />
@@ -198,6 +211,7 @@ function update($new_instance, $old_instance) {
 	  $instance['facebook'] = strip_tags($new_instance['facebook']);
 	  $instance['twitter'] = strip_tags($new_instance['twitter']);
 	  $instance['gplus'] = strip_tags($new_instance['gplus']);
+	  $instance['tumblr'] = strip_tags($new_instance['tumblr']);
 	  $instance['linkedin'] = strip_tags($new_instance['linkedin']);
 	  $instance['dribble'] = strip_tags($new_instance['dribble']);
 	  $instance['youtube'] = strip_tags($new_instance['youtube']);
@@ -205,6 +219,7 @@ function update($new_instance, $old_instance) {
 	  $instance['instagram'] = strip_tags($new_instance['instagram']);
 	  $instance['rssfeed'] = strip_tags($new_instance['rssfeed']);
 	  $instance['select'] = strip_tags($new_instance['select']);
+	  $instance['vertical'] = strip_tags($new_instance['vertical']);
      return $instance;
 }
 
@@ -226,6 +241,7 @@ function widget($args, $instance) {
    $facebook = $instance['facebook'];
    $twitter = $instance['twitter'];
    $gplus = $instance['gplus'];
+   $tumblr = $instance['tumblr'];
    $linkedin = $instance['linkedin'];
    $dribble = $instance['dribble'];
    $youtube = $instance['youtube'];
@@ -233,6 +249,7 @@ function widget($args, $instance) {
    $instagram = $instance['instagram'];
    $rssfeed = $instance['rssfeed'];
    $select = $instance['select'];
+   $vertical = $instance['vertical'];
 
    echo $before_widget;
    // Display the widget
@@ -326,6 +343,9 @@ function widget($args, $instance) {
 		}
 	elseif ( $select == 'Ribbon' ) {
 		include_once "includes/simple/ribbon.php";
+		}
+	elseif ( $select == 'Purple Rimmed' ) {
+		include_once "includes/simple/purplerimmed.php";
 		}		
 		
    echo '</div>';
