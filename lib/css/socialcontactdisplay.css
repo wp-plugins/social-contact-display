@@ -22,6 +22,14 @@ div.google {
 	padding-left: 50px;
 }
 
+div.tumblr {
+	background: #2f4d69 url(http://cdn.hptonline.co.uk/social-contact-display/images/modernflat/tm.png) 0px 0px no-repeat;
+	margin-bottom: 10px;
+	padding-bottom: 9px;
+	padding-top: 12px;
+	padding-left: 50px;
+}
+
 div.instagram {
 	background: #517fa4 url(http://cdn.hptonline.co.uk/social-contact-display/images/modernflat/ig.png) 0px 0px no-repeat;
 	margin-bottom: 10px;
@@ -54,6 +62,14 @@ div.youtube {
 	padding-left: 50px;
 }
 
+div.scdrss {
+	background: #ff6600 url(http://cdn.hptonline.co.uk/social-contact-display/images/modernflat/rss.png) 0px 0px no-repeat;
+	margin-bottom: 10px;
+	padding-bottom: 9px;
+	padding-top: 12px;
+	padding-left: 50px;
+}
+
 div.facebook a.social {
 color: #ffffff
 }
@@ -63,6 +79,10 @@ color: #ffffff
 }
 
 div.google a.social {
+color: #ffffff
+}
+
+div.tumblr a.social {
 color: #ffffff
 }
 
@@ -79,6 +99,10 @@ color: #ffffff
 }
 
 div.youtube a.social {
+color: #ffffff
+}
+
+div.scdrss a.social {
 color: #ffffff
 }
 
@@ -133,6 +157,9 @@ div.hpt-social-rss a.social {
 }
 div.hpt-social-rss:before {
   content: "\e005";
+}
+div.hpt-social-rss:hover {
+  color: #fff;
 }
 /* Variations: "\e006" "\e007" */
 /*** MAIL ***/

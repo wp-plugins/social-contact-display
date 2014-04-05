@@ -10,6 +10,9 @@ require_once('cleanurl.php');
    if( $gplus ) {
      echo '<div class="google"><a href="'.addScheme($gplus).'" target="_blank" class="social">Google +</a></div>';
    }
+   if( $tumblr ) {
+     echo '<div class="tumblr"><a href="'.addScheme($tumblr).'" target="_blank" class="social">Tumblr</a></div>';
+   }
    if( $instagram ) {
      echo '<div class="instagram"><a href="'.addScheme($linkedin).'" target="_blank" class="social">Instagram</a></div>';
    }   
@@ -21,5 +24,8 @@ require_once('cleanurl.php');
    }
    if( $youtube ) {
      echo '<div class="youtube"><a href="'.addScheme($youtube).'" target="_blank" class="social">YouTube</a></div>';
-   }       
+   }
+   if( $rssfeed ) {
+     echo '<div class="scdrss"><a href="'?><?php bloginfo('rss2_url'); ?><?php echo '" target="_blank" class="social">RSS</a>&nbsp;';
+   }
 ?>

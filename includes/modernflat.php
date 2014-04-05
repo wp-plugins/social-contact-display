@@ -8,6 +8,9 @@
    if( $scd_option['scd_url_txt_gplus'] ) {
      echo '<div class="google"><a href="'.$scd_option['scd_url_txt_gplus'].'" target="_blank" class="social">Google +</a></div>';
    }
+   if( $scd_option['scd_url_txt_tumblr'] ) {
+     echo '<div class="tumblr"><a href="'.$scd_option['scd_url_txt_tumblr'].'" target="_blank" class="social">Tumblr</a></div>';
+   }
    if( $scd_option['scd_url_txt_instagram'] ) {
      echo '<div class="instagram"><a href="'.$scd_option['scd_url_txt_instagram'].'" target="_blank" class="social">Instagram</a></div>';
    }   
@@ -19,5 +22,8 @@
    }
    if( $scd_option['scd_url_txt_youtube'] ) {
      echo '<div class="youtube"><a href="'.$scd_option['scd_url_txt_youtube'].'" target="_blank" class="social">YouTube</a></div>';
-   }       
+   }
+   if( $scd_option['scd_rss_checkbox'] ) {
+     echo '<div class="scdrss"><a href="'?><?php bloginfo('rss2_url'); ?><?php echo '" target="_blank" class="social">RSS</a>&nbsp;';
+   }
 ?>

@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.8.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.1.2
+Stable Tag: 2.1.3
 
 Social Contact Display Widget
 
@@ -69,6 +69,9 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 2. "Social Interaction Buttons" widget
 
 == Changelog ==
+
+= 2.1.3 =
+* Updated "Modern Flat" social media icons to include Tumblr and RSS - as per user request
 
 = 2.1.2 =
 * Added Tumblr social media icons, currently supported for Cute, Shaded, Simple Flat, Circle, Retro, Retro 2, Retro Circle, Wooden, Paper Flowers and Purple Rimmed, rest to follow - as per user request
