@@ -1,4 +1,4 @@
-div.facebook {
+div.scd-facebook {
 	background: #3b5998 url(http://cdn.hptonline.co.uk/social-contact-display/images/modernflat/fb.png) 0px 0px no-repeat;
 	margin-bottom: 10px;
 	padding-bottom: 9px;
@@ -6,7 +6,7 @@ div.facebook {
 	padding-left: 50px;
 }
 
-div.twitter {
+div.scd-twitter {
 	background: #00aced url(http://cdn.hptonline.co.uk/social-contact-display/images/modernflat/tw.png) 0px 0px no-repeat;
 	margin-bottom: 10px;
 	padding-bottom: 9px;
@@ -14,7 +14,7 @@ div.twitter {
 	padding-left: 50px;
 }
 
-div.google {
+div.scd-google {
 	background: #dd4b39 url(http://cdn.hptonline.co.uk/social-contact-display/images/modernflat/gp.png) 0px 0px no-repeat;
 	margin-bottom: 10px;
 	padding-bottom: 9px;
@@ -22,7 +22,7 @@ div.google {
 	padding-left: 50px;
 }
 
-div.tumblr {
+div.scd-tumblr {
 	background: #2f4d69 url(http://cdn.hptonline.co.uk/social-contact-display/images/modernflat/tm.png) 0px 0px no-repeat;
 	margin-bottom: 10px;
 	padding-bottom: 9px;
@@ -30,7 +30,7 @@ div.tumblr {
 	padding-left: 50px;
 }
 
-div.instagram {
+div.scd-instagram {
 	background: #517fa4 url(http://cdn.hptonline.co.uk/social-contact-display/images/modernflat/ig.png) 0px 0px no-repeat;
 	margin-bottom: 10px;
 	padding-bottom: 9px;
@@ -38,7 +38,7 @@ div.instagram {
 	padding-left: 50px;
 }
 
-div.pinterest {
+div.scd-pinterest {
 	background: #cb2027 url(http://cdn.hptonline.co.uk/social-contact-display/images/modernflat/pi.png) 0px 0px no-repeat;
 	margin-bottom: 10px;
 	padding-bottom: 9px;
@@ -46,7 +46,7 @@ div.pinterest {
 	padding-left: 50px;
 }
 
-div.linkedin {
+div.scd-linkedin {
 	background: #007bb6 url(http://cdn.hptonline.co.uk/social-contact-display/images/modernflat/in.png) 0px 0px no-repeat;
 	margin-bottom: 10px;
 	padding-bottom: 9px;
@@ -54,7 +54,7 @@ div.linkedin {
 	padding-left: 50px;
 }
 
-div.youtube {
+div.scd-youtube {
 	background: #bb0000 url(http://cdn.hptonline.co.uk/social-contact-display/images/modernflat/yt.png) 0px 0px no-repeat;
 	margin-bottom: 10px;
 	padding-bottom: 9px;
@@ -62,7 +62,7 @@ div.youtube {
 	padding-left: 50px;
 }
 
-div.scdrss {
+div.scd-rss {
 	background: #ff6600 url(http://cdn.hptonline.co.uk/social-contact-display/images/modernflat/rss.png) 0px 0px no-repeat;
 	margin-bottom: 10px;
 	padding-bottom: 9px;
@@ -70,39 +70,39 @@ div.scdrss {
 	padding-left: 50px;
 }
 
-div.facebook a.social {
+div.scd-facebook a.social {
 color: #ffffff
 }
 
-div.twitter a.social {
+div.scd-twitter a.social {
 color: #ffffff
 }
 
-div.google a.social {
+div.scd-google a.social {
 color: #ffffff
 }
 
-div.tumblr a.social {
+div.scd-tumblr a.social {
 color: #ffffff
 }
 
-div.instagram a.social {
+div.scd-instagram a.social {
 color: #ffffff
 }
 
-div.pinterest a.social {
+div.scd-pinterest a.social {
 color: #ffffff
 }
 
-div.linkedin a.social {
+div.scd-linkedin a.social {
 color: #ffffff
 }
 
-div.youtube a.social {
+div.scd-youtube a.social {
 color: #ffffff
 }
 
-div.scdrss a.social {
+div.scd-rss a.social {
 color: #ffffff
 }
 
