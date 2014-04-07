@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.wp-creative.co.uk/social-contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple widget or shortcode. Important! Please read the FAQ when upgrading from version 1.
-Version: 2.1.3
+Version: 2.1.4
 Author: WPCreative (Ian Norris, James White)
 License: GPL2+
 Author URI: http://www.wp-creative.co.uk
@@ -42,7 +42,8 @@ function ts_add_plugin_action_links( $links ) {
  
 	return array_merge(
 		array(
-			'faq' => '<a href="' . get_bloginfo( 'wpurl' ) . '/wp-admin/tools.php?page=scd-settings">Settings</a>'
+			'faq' => '<a href="' . get_bloginfo( 'wpurl' ) . '/wp-admin/tools.php?page=scd-settings">Settings</a>',
+			'pro' => '<a href="http://www.wp-creative.co.uk/social-contact-display-pro/" target="_blank">Go Pro</a>'
 		),
 		$links
 	);
@@ -58,7 +59,10 @@ function ts_plugin_meta_links( $links, $file ) {
 	if ( $file == $plugin ) {
 		return array_merge(
 			$links,
-			array( '<a href="http://wordpress.org/plugins/social-contact-display/faq/ target="_blank"">FAQ</a>' )
+			array( 
+				'<a href="http://wordpress.org/plugins/social-contact-display/faq/ target="_blank"">FAQ</a>', 
+				'<a href="http://www.wp-creative.co.uk/social-contact-display-pro/" target="_blank">Go Pro</a>'
+				)
 		);
 	}
 	return $links;
