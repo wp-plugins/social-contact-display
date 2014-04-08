@@ -26,6 +26,6 @@ require_once('cleanurl.php');
      echo '<div class="scd-youtube"><a href="'.addScheme($youtube).'" target="_blank" class="social">YouTube</a></div>';
    }
    if( $rssfeed ) {
-     echo '<div class="scd-rss"><a href="'?><?php bloginfo('rss2_url'); ?><?php echo '" target="_blank" class="social">RSS</a>&nbsp;';
+     echo '<div class="scd-rss"><a href="'?><?php bloginfo('rss2_url'); ?><?php echo '" target="_blank" class="social">RSS</a></div>';
    }
 ?>

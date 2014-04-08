@@ -24,6 +24,6 @@
      echo '<div class="scd-youtube"><a href="'.$scd_option['scd_url_txt_youtube'].'" target="_blank" class="social">YouTube</a></div>';
    }
    if( $scd_option['scd_rss_checkbox'] ) {
-     echo '<div class="scd-rss"><a href="'?><?php bloginfo('rss2_url'); ?><?php echo '" target="_blank" class="social">RSS</a>&nbsp;';
+     echo '<div class="scd-rss"><a href="'?><?php bloginfo('rss2_url'); ?><?php echo '" target="_blank" class="social">RSS</a></div>';
    }
 ?>
