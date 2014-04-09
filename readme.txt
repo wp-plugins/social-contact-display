@@ -17,7 +17,7 @@ You currently have 15 <a href="http://demo.wp-creative.co.uk/contact-display-wid
 
 We have also recently added lightweight pure HTML5 and CSS3 social media icon sets.
 
-Check out a demo: <a href="http://demo.wp-creative.co.uk/contact-display-widget/">Here</a>
+Check out a demo: <a href="http://demo.wp-creative.co.uk/social-contact-display-widget/">Here</a>
 
 == Installation ==
 
