@@ -87,8 +87,14 @@ function social_contact_display_shortcode(){
 	elseif ( $scd_option['scd_select_input'] == 'Retro 2' ) {
 		include_once "includes/retro2.php";
 		}	
-	elseif ( $scd_option['scd_select_input'] == 'Retro Circle' ) {
+	elseif ( $scd_option['scd_select_input'] == 'Retro Circle Pink' ) {
 		include_once "includes/retrocircle.php";
+		}
+	elseif ( $scd_option['scd_select_input'] == 'Retro Circle Green' ) {
+		include_once "includes/retrocircle-green.php";
+		}
+	elseif ( $scd_option['scd_select_input'] == 'Retro Circle Grey' ) {
+		include_once "includes/retrocircle-grey.php";
 		}	
 	elseif ( $scd_option['scd_select_input'] == 'Paper Flowers' ) {
 		include_once "includes/paperflowers.php";

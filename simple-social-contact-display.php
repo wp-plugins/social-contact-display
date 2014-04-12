@@ -170,7 +170,7 @@ if( $instance) {
 <label for="<?php echo $this->get_field_id('select'); ?>"><?php _e('Select', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 <?php
-$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Retro', 'Retro 2', 'Retro Circle', 'Wooden', 'CSS and HTML5 set 1', 'CSS and HTML5 set 2', 'Paper Flowers', 'Ribbon', 'Purple Rimmed');
+$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Retro', 'Retro 2', 'Retro Circle Pink', 'Retro Circle Green', 'Retro Circle Grey', 'Wooden', 'CSS and HTML5 set 1', 'CSS and HTML5 set 2', 'Paper Flowers', 'Ribbon', 'Purple Rimmed');
 foreach ($options as $option) {
 echo '<option value="' . $option . '" id="' . $option . '"', $select == $option ? ' selected="select"' : '', '>', $option, '</option>';
 }
@@ -335,9 +335,15 @@ function widget($args, $instance) {
 	elseif ( $select == 'Retro 2' ) {
 		include_once "includes/simple/retro2.php";
 		}	
-	elseif ( $select == 'Retro Circle' ) {
+	elseif ( $select == 'Retro Circle Pink' ) {
 		include_once "includes/simple/retrocircle.php";
-		}	
+		}
+	elseif ( $select == 'Retro Circle Green' ) {
+		include_once "includes/simple/retrocircle-green.php";
+		}
+	elseif ( $select == 'Retro Circle Grey' ) {
+		include_once "includes/simple/retrocircle-grey.php";
+		}		
 	elseif ( $select == 'Paper Flowers' ) {
 		include_once "includes/simple/paperflowers.php";
 		}

@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.8.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.1.6
+Stable Tag: 2.1.7
 
 Social Contact Display Widget
 
@@ -69,6 +69,9 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 2. "Social Interaction Buttons" widget
 
 == Changelog ==
+
+= 2.1.7 =
+* Added Retro Circle Green and Retro Circle Grey social media icons
 
 = 2.1.6 =
 * Issue with RSS icon on Modern Flat
