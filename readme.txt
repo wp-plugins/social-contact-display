@@ -13,11 +13,27 @@ Social Contact Display Widget
 
 WP Creative have created a simple social contact display widget for your WordPress website. A very simple user interface allows you to easily update both your business address and your social media sites, including Facebook, Twitter, LinkedIn, Google Plus, Pinterest and Instagram. The widget is modular, so you can choose which options you want to display.
 
-You currently have 15 <a href="http://demo.wp-creative.co.uk/contact-display-widget/social-media-icons/">Social Media Icon Sets</a> to choose from and the list is being added to all the time.
+You currently have 17 <a href="http://demo.wp-creative.co.uk/contact-display-widget/social-media-icons/">Social Media Icon Sets</a> to choose from and the list is being added to all the time.
 
 We have also recently added lightweight pure HTML5 and CSS3 social media icon sets.
 
 Check out a demo: <a href="http://demo.wp-creative.co.uk/social-contact-display-widget/">Here</a>
+
+A Pro version can also be purchased after installing the standard version. The changelog for the pro version is:
+
+= 3.2 =
+* Google map is now interactive instead of static
+
+= 3.1 =
+* Added the ability to add custom CSS to individual widgets. Custom CSS needs to be added to your main CSS file with !important tags
+
+= 3.0.1 =
+* Added Retro Circle Green and Retro Circle Grey social media icons
+
+= 3.0.0 =
+* Pro version released with business hours widget
+
+
 
 == Installation ==
 
@@ -214,49 +230,3 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 
 = 0.1 =
 * Initial build
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
