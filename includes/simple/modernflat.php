@@ -14,7 +14,7 @@ require_once('cleanurl.php');
      echo '<div class="scd-tumblr"><a href="'.addScheme($tumblr).'" target="_blank" class="social">Tumblr</a></div>';
    }
    if( $instagram ) {
-     echo '<div class="scd-instagram"><a href="'.addScheme($linkedin).'" target="_blank" class="social">Instagram</a></div>';
+     echo '<div class="scd-instagram"><a href="'.addScheme($instagram).'" target="_blank" class="social">Instagram</a></div>';
    }   
    if( $pinterest ) {
      echo '<div class="scd-pinterest"><a href="'.addScheme($pinterest).'" target="_blank" class="social">Pinterest</a></div>';

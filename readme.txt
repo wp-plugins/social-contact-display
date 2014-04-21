@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.9
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.1.7
+Stable Tag: 2.1.8
 
 Social Contact Display Widget
 
@@ -20,6 +20,9 @@ We have also recently added lightweight pure HTML5 and CSS3 social media icon se
 Check out a demo: <a href="http://demo.wp-creative.co.uk/social-contact-display-widget/">Here</a>
 
 A Pro version can also be purchased after installing the standard version. The changelog for the pro version is:
+
+= 3.3 =
+* Added new shortcode attributes for the social contact display widget - you can now create individual address's and display separate social media icon sets
 
 = 3.2 =
 * Google map is now interactive instead of static
@@ -85,6 +88,9 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 2. "Social Interaction Buttons" widget
 
 == Changelog ==
+
+= 2.1.8 =
+* Fixed an issue with the modern flat social media icons, instagram link, in the simple widget
 
 = 2.1.7 =
 * Added Retro Circle Green and Retro Circle Grey social media icons

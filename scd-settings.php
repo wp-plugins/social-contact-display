@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.wp-creative.co.uk/social-contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple widget or shortcode. The Pro version also includes a business hours widget, custom CSS and interactive Google map. 
-Version: 2.1.7
+Version: 2.1.8
 Author: WPCreative (Ian Norris, James White)
 License: GPL2+
 Author URI: http://www.wp-creative.co.uk
