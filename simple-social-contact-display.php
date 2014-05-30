@@ -122,42 +122,42 @@ if( $instance) {
 
 <p>
 <label for="<?php echo $this->get_field_id('facebook'); ?>"><?php _e('Facebook URL:', 'wp_widget_plugin'); ?></label>
-<input class="widefat" id="<?php echo $this->get_field_id('facebook'); ?>" name="<?php echo $this->get_field_name('facebook'); ?>" type="text" value="<?php echo $facebook; ?>" />
+<input class="widefat" id="<?php echo $this->get_field_id('facebook'); ?>" name="<?php echo $this->get_field_name('facebook'); ?>" type="text" value="<?php if(empty($facebook)) { echo "http://";} else { echo $facebook; } ?>" />
 </p>
 
 <p>
 <label for="<?php echo $this->get_field_id('twitter'); ?>"><?php _e('Twitter URL:', 'wp_widget_plugin'); ?></label>
-<input class="widefat" id="<?php echo $this->get_field_id('twitter'); ?>" name="<?php echo $this->get_field_name('twitter'); ?>" type="text" value="<?php echo $twitter; ?>" />
+<input class="widefat" id="<?php echo $this->get_field_id('twitter'); ?>" name="<?php echo $this->get_field_name('twitter'); ?>" type="text" value="<?php if(empty($twitter)) { echo "http://";} else { echo $twitter; } ?>" />
 </p>
 
 <p>
 <label for="<?php echo $this->get_field_id('gplus'); ?>"><?php _e('Google Plus URL:', 'wp_widget_plugin'); ?></label>
-<input class="widefat" id="<?php echo $this->get_field_id('gplus'); ?>" name="<?php echo $this->get_field_name('gplus'); ?>" type="text" value="<?php echo $gplus; ?>" />
+<input class="widefat" id="<?php echo $this->get_field_id('gplus'); ?>" name="<?php echo $this->get_field_name('gplus'); ?>" type="text" value="<?php if(empty($gplus)) { echo "http://";} else { echo $gplus; } ?>" />
 </p>
 
 <p>
 <label for="<?php echo $this->get_field_id('tumblr'); ?>"><?php _e('Tumblr URL:', 'wp_widget_plugin'); ?></label>
-<input class="widefat" id="<?php echo $this->get_field_id('tumblr'); ?>" name="<?php echo $this->get_field_name('tumblr'); ?>" type="text" value="<?php echo $tumblr; ?>" />
+<input class="widefat" id="<?php echo $this->get_field_id('tumblr'); ?>" name="<?php echo $this->get_field_name('tumblr'); ?>" type="text" value="<?php if(empty($tumblr)) { echo "http://";} else { echo $tumblr; } ?>" />
 </p>
 
 <p>
 <label for="<?php echo $this->get_field_id('linkedin'); ?>"><?php _e('Linked In URL:', 'wp_widget_plugin'); ?></label>
-<input class="widefat" id="<?php echo $this->get_field_id('linkedin'); ?>" name="<?php echo $this->get_field_name('linkedin'); ?>" type="text" value="<?php echo $linkedin; ?>" />
+<input class="widefat" id="<?php echo $this->get_field_id('linkedin'); ?>" name="<?php echo $this->get_field_name('linkedin'); ?>" type="text" value="<?php if(empty($linkedin)) { echo "http://";} else { echo $linkedin; } ?>" />
 </p>
 
 <p>
 <label for="<?php echo $this->get_field_id('youtube'); ?>"><?php _e('YouTube URL:', 'wp_widget_plugin'); ?></label>
-<input class="widefat" id="<?php echo $this->get_field_id('youtube'); ?>" name="<?php echo $this->get_field_name('youtube'); ?>" type="text" value="<?php echo $youtube; ?>" />
+<input class="widefat" id="<?php echo $this->get_field_id('youtube'); ?>" name="<?php echo $this->get_field_name('youtube'); ?>" type="text" value="<?php if(empty($youtube)) { echo "http://";} else { echo $youtube; } ?>" />
 </p>
 
 <p>
 <label for="<?php echo $this->get_field_id('pinterest'); ?>"><?php _e('Pinterest URL:', 'wp_widget_plugin'); ?></label>
-<input class="widefat" id="<?php echo $this->get_field_id('pinterest'); ?>" name="<?php echo $this->get_field_name('pinterest'); ?>" type="text" value="<?php echo $pinterest; ?>" />
+<input class="widefat" id="<?php echo $this->get_field_id('pinterest'); ?>" name="<?php echo $this->get_field_name('pinterest'); ?>" type="text" value="<?php if(empty($pinterest)) { echo "http://";} else { echo $pinterest; } ?>" />
 </p>
 
 <p>
 <label for="<?php echo $this->get_field_id('instagram'); ?>"><?php _e('Instagram URL:', 'wp_widget_plugin'); ?></label>
-<input class="widefat" id="<?php echo $this->get_field_id('instagram'); ?>" name="<?php echo $this->get_field_name('instagram'); ?>" type="text" value="<?php echo $instagram; ?>" />
+<input class="widefat" id="<?php echo $this->get_field_id('instagram'); ?>" name="<?php echo $this->get_field_name('instagram'); ?>" type="text" value="<?php if(empty($instagram)) { echo "http://";} else { echo $instagram; } ?>" />
 </p>
 
 <p>
