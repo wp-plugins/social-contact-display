@@ -141,7 +141,7 @@ add_action('widgets_init', create_function('', 'return register_widget("social_c
 // register style on initialization
 add_action('init', 'register_style');
 
-function register_style(){
+function register_scd_style(){
 
     wp_register_style( 'social_contact_display', plugins_url('/lib/css/socialcontactdisplay.css', __FILE__));
 	wp_register_style( 'entypo', plugins_url('/lib/css/entypo.css', __FILE__));
@@ -149,7 +149,7 @@ function register_style(){
 
 // use the registered style above
 add_action('wp_enqueue_scripts', 'enqueue_style');
-function enqueue_style(){
+function enqueue_scd_style(){
 
     wp_enqueue_style( 'social_contact_display' );
 	wp_enqueue_style( 'entypo' );
