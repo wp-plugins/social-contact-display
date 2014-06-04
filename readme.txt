@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.9.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.2.2
+Stable Tag: 2.3
 
 Social Contact Display Widget
 
@@ -20,6 +20,12 @@ We have also recently added lightweight pure HTML5 and CSS3 social media icon se
 Check out a demo: <a href="http://demo.wp-creative.co.uk/social-contact-display-widget/">Here</a>
 
 A Pro version can also be purchased after installing the standard version. The changelog for the pro version is:
+
+= 3.5 =
+* Added licensing for automatic upgrades
+
+= 3.4 =
+* Removed cleanurl script from the simple widget - far too many compatibility issues
 
 = 3.3 =
 * Added new shortcode attributes for the social contact display widget - you can now create individual address's and display separate social media icon sets
@@ -88,6 +94,11 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 2. "Social Interaction Buttons" widget
 
 == Changelog ==
+
+= 2.3 =
+* Addeed the ability to edit the ALT text for social media images (standard widget only). Under SCD Settings - Social Media, there is now a checkbox that will need to be ticked if you want to edit.
+* Moved CDN to wp-creative.co.uk
+
 
 = 2.2.2 =
 * Reverted function change due to some incompatibility - will add a workaround in next version

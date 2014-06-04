@@ -1,7 +1,7 @@
 <?php
 /**
  * Define page tabs
- * $tabs['tab-slug'] 	= __('Tab Name', 'wpShop');
+ *  
  */
 function scd_options_two_page_tabs() {
 	
@@ -77,6 +77,9 @@ function scd_options_two_page_fields() {
 	// get the current tab
 	$tab = scd_get_the_tab();
 	
+	// get global options
+	$scd_option = scd_get_global_options();
+	
 	// setting fields according to tab
 	switch ($tab) {
 		case 'contact-details':
@@ -89,7 +92,7 @@ function scd_options_two_page_fields() {
 		"type"    => "text",
 		"std"     => __('','scd_textdomain')
 	);
-	
+		
 	$options[] = array(
 		"section" => "txt_section",
 		"id"      => SCD_SHORTNAME . "_txt_addresslineone",
@@ -177,6 +180,15 @@ function scd_options_two_page_fields() {
 		//Social Media Settings
 	$options[] = array(
 		"section" => "socialmedia_section",
+		"id"      => SCD_SHORTNAME . "_update_social_media_alt",
+		"title"   => __( 'Update Alt Text:', 'scd_textdomain' ),
+		"desc"    => __( '', 'scd_textdomain' ),
+		"type"    => "checkbox",
+		"std"     => "0"
+	);	
+		
+	$options[] = array(
+		"section" => "socialmedia_section",
 		"id"      => SCD_SHORTNAME . "_txt_socialiconstitle",
 		"title"   => __( 'Social Icons Title (e.g. Connect with Us):', 'scd_textdomain' ),
 		"desc"    => __( 'A regular text input field. Some inline HTML (&lt;a&gt;, &lt;b&gt;, &lt;em&gt;, &lt;i&gt;, &lt;strong&gt;) is allowed.', 'scd_textdomain' ),
@@ -193,6 +205,17 @@ function scd_options_two_page_fields() {
 		"std"     => "http://www.facebook.com",
 		"class"   => "url"
 	);
+
+	If ($scd_option['scd_update_social_media_alt'] == "1") {
+	$options[] = array(
+		"section" => "socialmedia_section",
+		"id"      => SCD_SHORTNAME . "_alt_facebook",
+		"title"   => __( 'Facebook Alt Text:', 'scd_textdomain' ),
+		"desc"    => __( 'A text input field', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => "WP Creative - Social Contact Display",
+	);
+	};
 	
 	$options[] = array(
 		"section" => "socialmedia_section",
@@ -204,6 +227,17 @@ function scd_options_two_page_fields() {
 		"class"   => "url"
 	);
 	
+	If ($scd_option['scd_update_social_media_alt'] == "1") {
+	$options[] = array(
+		"section" => "socialmedia_section",
+		"id"      => SCD_SHORTNAME . "_alt_twitter",
+		"title"   => __( 'Twitter Alt Text:', 'scd_textdomain' ),
+		"desc"    => __( 'A text input field', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => "WP Creative - Social Contact Display",
+	);
+	};
+	
 	$options[] = array(
 		"section" => "socialmedia_section",
 		"id"      => SCD_SHORTNAME . "_url_txt_gplus",
@@ -213,6 +247,17 @@ function scd_options_two_page_fields() {
 		"std"     => "http://plus.google.com",
 		"class"   => "url"
 	);
+	
+	If ($scd_option['scd_update_social_media_alt'] == "1") {
+	$options[] = array(
+		"section" => "socialmedia_section",
+		"id"      => SCD_SHORTNAME . "_alt_gplus",
+		"title"   => __( 'Google Plus Alt Text:', 'scd_textdomain' ),
+		"desc"    => __( 'A text input field', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => "WP Creative - Social Contact Display",
+	);
+	};
 	
 	$options[] = array(
 		"section" => "socialmedia_section",
@@ -224,6 +269,17 @@ function scd_options_two_page_fields() {
 		"class"   => "url"
 	);
 	
+	If ($scd_option['scd_update_social_media_alt'] == "1") {
+	$options[] = array(
+		"section" => "socialmedia_section",
+		"id"      => SCD_SHORTNAME . "_alt_tumblr",
+		"title"   => __( 'Tumblr Alt Text:', 'scd_textdomain' ),
+		"desc"    => __( 'A text input field', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => "WP Creative - Social Contact Display",
+	);
+	};
+	
 	$options[] = array(
 		"section" => "socialmedia_section",
 		"id"      => SCD_SHORTNAME . "_url_txt_linkedin",
@@ -233,6 +289,17 @@ function scd_options_two_page_fields() {
 		"std"     => "http://www.linkedin.com",
 		"class"   => "url"
 	);
+	
+	If ($scd_option['scd_update_social_media_alt'] == "1") {
+	$options[] = array(
+		"section" => "socialmedia_section",
+		"id"      => SCD_SHORTNAME . "_alt_linkedin",
+		"title"   => __( 'Linked In Alt Text:', 'scd_textdomain' ),
+		"desc"    => __( 'A text input field', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => "WP Creative - Social Contact Display",
+	);
+	};
 	
 	$options[] = array(
 		"section" => "socialmedia_section",
@@ -244,6 +311,17 @@ function scd_options_two_page_fields() {
 		"class"   => "url"
 	);
 	
+	If ($scd_option['scd_update_social_media_alt'] == "1") {
+	$options[] = array(
+		"section" => "socialmedia_section",
+		"id"      => SCD_SHORTNAME . "_alt_youtube",
+		"title"   => __( 'YouTube Alt Text:', 'scd_textdomain' ),
+		"desc"    => __( 'A text input field', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => "WP Creative - Social Contact Display",
+	);
+	};
+	
 	$options[] = array(
 		"section" => "socialmedia_section",
 		"id"      => SCD_SHORTNAME . "_url_txt_pinterest",
@@ -254,6 +332,17 @@ function scd_options_two_page_fields() {
 		"class"   => "url"
 	);
 	
+	If ($scd_option['scd_update_social_media_alt'] == "1") {
+	$options[] = array(
+		"section" => "socialmedia_section",
+		"id"      => SCD_SHORTNAME . "_alt_pinterest",
+		"title"   => __( 'Pinterest Alt Text:', 'scd_textdomain' ),
+		"desc"    => __( 'A text input field', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => "WP Creative - Social Contact Display",
+	);
+	};
+	
 	$options[] = array(
 		"section" => "socialmedia_section",
 		"id"      => SCD_SHORTNAME . "_url_txt_instagram",
@@ -263,6 +352,17 @@ function scd_options_two_page_fields() {
 		"std"     => "http://www.instagram.com",
 		"class"   => "url"
 	);
+	
+	If ($scd_option['scd_update_social_media_alt'] == "1") {
+	$options[] = array(
+		"section" => "socialmedia_section",
+		"id"      => SCD_SHORTNAME . "_alt_instagram",
+		"title"   => __( 'Instagram Alt Text:', 'scd_textdomain' ),
+		"desc"    => __( 'A text input field', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => "WP Creative - Social Contact Display",
+	);
+	};
 	
 	$options[] = array(
 		"section" => "socialmedia_section",
