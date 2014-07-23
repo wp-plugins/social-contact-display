@@ -144,7 +144,7 @@ add_action('init', 'register_style');
 function register_style(){
 
     wp_register_style( 'social_contact_display', plugins_url('/lib/css/socialcontactdisplay.css', __FILE__));
-	wp_register_style( 'entypo', plugins_url('/lib/css/entypo.css', __FILE__));
+//	wp_register_style( 'entypo', plugins_url('/lib/css/entypo.css', __FILE__));
 }
 
 // use the registered style above
