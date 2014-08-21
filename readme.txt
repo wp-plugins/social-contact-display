@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 3.9.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.3.1
+Stable Tag: 2.3.2
 
 Social Contact Display Widget
 
@@ -95,10 +95,12 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 
 == Changelog ==
 
-= 2.3 =
-* Addeed the ability to edit the ALT text for social media images (standard widget only). Under SCD Settings - Social Media, there is now a checkbox that will need to be ticked if you want to edit.
-* Moved CDN to wp-creative.co.uk
+= 2.3.2 =
+* Added Retro Circle Blue social media icons 
 
+= 2.3 =
+* Added the ability to edit the ALT text for social media images (standard widget only). Under SCD Settings - Social Media, there is now a checkbox that will need to be ticked if you want to edit.
+* Moved CDN to wp-creative.co.uk
 
 = 2.2.2 =
 * Reverted function change due to some incompatibility - will add a workaround in next version

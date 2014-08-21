@@ -95,6 +95,9 @@ function social_contact_display_shortcode(){
 		}
 	elseif ( $scd_option['scd_select_input'] == 'Retro Circle Grey' ) {
 		include_once "includes/retrocircle-grey.php";
+		}
+	elseif ( $scd_option['scd_select_input'] == 'Retro Circle Blue' ) {
+		include_once "includes/retrocircle-blue.php";
 		}	
 	elseif ( $scd_option['scd_select_input'] == 'Paper Flowers' ) {
 		include_once "includes/paperflowers.php";
