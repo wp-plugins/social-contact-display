@@ -1,7 +1,7 @@
 <?php
 
    if( $facebook != "http://" ) {
-    echo '<a href="'.$facebook.'" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/dark/social-facebook.png" ></a>&nbsp;';
+    echo '<a href="'.$facebook.'" target="_blank"><img src="http://cdn.wp-creative.co.uk/social-contact-display/images/dark/social-facebook.png" ></a>&nbsp;';
    }
    if ( $vertical == '1' ) { 
      echo '<br>'; 

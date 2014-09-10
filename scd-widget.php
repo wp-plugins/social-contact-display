@@ -104,6 +104,9 @@ function social_contact_display_shortcode(){
 		}
 	elseif ( $scd_option['scd_select_input'] == 'Purple Rimmed' ) {
 		include_once "includes/purplerimmed.php";
+		}
+	elseif ( $scd_option['scd_select_input'] == 'Social Trucks' ) {
+		include_once "includes/trucks.php";
 		}	
 }
 

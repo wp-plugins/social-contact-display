@@ -380,7 +380,7 @@ function scd_options_two_page_fields() {
 		"desc"    => __( 'Samples can be found <a href="http://demo.wp-creative.co.uk/social-contact-display-widget/social-media-icons/" target="_blank" >on our site</a>', 'scd_textdomain' ),
 		"type"    => "select",
 		"std"    => "Modern Flat",
-		"choices" => array( "Light", "Dark", "Modern Flat", "Cute", "Shaded", "Simple Flat", "Circle", "Vintage", "Retro", "Retro 2", "Retro Circle Pink", "Retro Circle Green", "Retro Circle Grey", "Retro Circle Blue", "Wooden", "CSS and HTML5 set 1", "CSS and HTML5 set 2", "Paper Flowers", "Purple Rimmed")
+		"choices" => array( "Light", "Dark", "Modern Flat", "Cute", "Shaded", "Simple Flat", "Circle", "Vintage", "Retro", "Retro 2", "Retro Circle Pink", "Retro Circle Green", "Retro Circle Grey", "Retro Circle Blue", "Wooden", "CSS and HTML5 set 1", "CSS and HTML5 set 2", "Paper Flowers", "Purple Rimmed", "Social Trucks")
 	);
 	
 	$options[] = array(

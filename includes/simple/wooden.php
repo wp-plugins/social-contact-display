@@ -1,25 +1,25 @@
 <?php
 
    if( $facebook != "http://" ) {
-    echo '<a href="'.$facebook.'" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/wooden/facebook.png" height="38" width="37" ></a>&nbsp;';
+    echo '<a href="'.$facebook.'" target="_blank"><img src="http://cdn.wp-creative.co.uk/social-contact-display/images/wooden/facebook.png" height="38" width="37" ></a>&nbsp;';
    }
    if ( $vertical == '1' ) { 
      echo '<br>'; 
    }
   if( $twitter != "http://" ) {
-     echo '<a href="'.$twitter.'" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/wooden/twitter.png" height="38" width="37" ></a>&nbsp;';
+     echo '<a href="'.$twitter.'" target="_blank"><img src="http://cdn.wp-creative.co.uk/social-contact-display/images/wooden/twitter.png" height="38" width="37" ></a>&nbsp;';
    }
    if ( $vertical == '1' ) { 
      echo '<br>'; 
    }
    if( $gplus != "http://" ) {
-     echo '<a href="'.$gplus.'" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/wooden/google-plus.png" height="38" width="37" ></a>&nbsp;';
+     echo '<a href="'.$gplus.'" target="_blank"><img src="http://cdn.wp-creative.co.uk/social-contact-display/images/wooden/google-plus.png" height="38" width="37" ></a>&nbsp;';
    }
    if ( $vertical == '1' ) { 
      echo '<br>'; 
    }
    if( $tumblr != "http://" ) {
-     echo '<a href="'.$tumblr.'" target="_blank"><img src="http://cdn.hptonline.co.uk/social-contact-display/images/wooden/tumblr.png" height="38" width="37" ></a>&nbsp;';
+     echo '<a href="'.$tumblr.'" target="_blank"><img src="http://cdn.wp-creative.co.uk/social-contact-display/images/wooden/tumblr.png" height="38" width="37" ></a>&nbsp;';
    }
    if ( $vertical == '1' ) { 
      echo '<br>'; 

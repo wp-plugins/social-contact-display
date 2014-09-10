@@ -2,10 +2,10 @@
 Contributors: hptonline
 Tags: social, contact, widget, social media, facebook, google plus, google, twitter, linkedin, youtube, pinterest, instagram, social media icons, social share, css, html5, google map
 Requires at least: 3.0.1
-Tested up to: 3.9.1
+Tested up to: 4.0
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.3.2
+Stable Tag: 2.3.3
 
 Social Contact Display Widget
 
@@ -13,7 +13,7 @@ Social Contact Display Widget
 
 WP Creative have created a simple social contact display widget for your WordPress website. A very simple user interface allows you to easily update both your business address and your social media sites, including Facebook, Twitter, LinkedIn, Google Plus, Pinterest and Instagram. The widget is modular, so you can choose which options you want to display.
 
-You currently have 17 <a href="http://demo.wp-creative.co.uk/contact-display-widget/social-media-icons/">Social Media Icon Sets</a> to choose from and the list is being added to all the time.
+You currently have 22 <a href="http://demo.wp-creative.co.uk/contact-display-widget/social-media-icons/">Social Media Icon Sets</a> to choose from and the list is being added to all the time.
 
 We have also recently added lightweight pure HTML5 and CSS3 social media icon sets.
 
@@ -95,11 +95,14 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 
 == Changelog ==
 
+= 2.3.3 =
+* Added Social Trucks social media icons (Only for Facebook, Twitter, Linked-In and RSS)
+
 = 2.3.2 =
 * Added Retro Circle Blue social media icons 
 
 = 2.3 =
-* Added the ability to edit the ALT text for social media images (standard widget only). Under SCD Settings - Social Media, there is now a checkbox that will need to be ticked if you want to edit.
+* Added the ability to edit the ALT text for social media images (standard widget only). Under SCD Settings - Social Media, there is now a checkbox that will need to be ticked if you want to edit
 * Moved CDN to wp-creative.co.uk
 
 = 2.2.2 =
