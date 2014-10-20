@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 4.0
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.3.4
+Stable Tag: 2.3.5
 
 Social Contact Display Widget
 
@@ -94,6 +94,9 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 2. "Social Interaction Buttons" widget
 
 == Changelog ==
+
+= 2.3.5 =
+* Standard widget now allows SSL for images. 
 
 = 2.3.4 =
 * Updated the simple widget
