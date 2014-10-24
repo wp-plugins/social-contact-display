@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 4.0
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.3.5
+Stable Tag: 2.3.6
 
 Social Contact Display Widget
 
@@ -19,13 +19,10 @@ We have also recently added lightweight pure HTML5 and CSS3 social media icon se
 
 Check out a demo: <a href="http://demo.wp-creative.co.uk/social-contact-display-widget/">Here</a>
 
-A Pro version can also be purchased after installing the standard version. The changelog for the pro version is:
+A Pro version can also be purchased after installing the standard version. The changelog for the pro version is (also includes all standard updates):
 
 = 3.5 =
 * Added licensing for automatic upgrades
-
-= 3.4 =
-* Removed cleanurl script from the simple widget - far too many compatibility issues
 
 = 3.3 =
 * Added new shortcode attributes for the social contact display widget - you can now create individual address's and display separate social media icon sets
@@ -36,10 +33,7 @@ A Pro version can also be purchased after installing the standard version. The c
 = 3.1 =
 * Added the ability to add custom CSS to individual widgets. Custom CSS needs to be added to your main CSS file with !important tags
 
-= 3.0.1 =
-* Added Retro Circle Green and Retro Circle Grey social media icons
-
-= 3.0.0 =
+= 3.0 =
 * Pro version released with business hours widget
 
 
@@ -94,6 +88,9 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 2. "Social Interaction Buttons" widget
 
 == Changelog ==
+
+= 2.3.6 =
+* Simple widget now allows SSL for images.
 
 = 2.3.5 =
 * Standard widget now allows SSL for images. 

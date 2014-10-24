@@ -251,7 +251,7 @@ function widget($args, $instance) {
    $select = $instance['select'];
    $vertical = $instance['vertical'];
    
-   $cdn = "http://cdn.wp-creative.co.uk/social-contact-display/images/";
+   $cdn = "//cdn.wp-creative.co.uk/social-contact-display/images/";
 
    echo $before_widget;
    // Display the widget
