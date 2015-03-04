@@ -107,7 +107,10 @@ function social_contact_display_shortcode(){
 		}
 	elseif ( $scd_option['scd_select_input'] == 'Social Trucks' ) {
 		include_once "includes/trucks.php";
-		}	
+		}
+	elseif ( $scd_option['scd_select_input'] == 'Old Bottle Crowns' ) {
+		include_once "includes/old-bottle-crowns.php";
+		}		
 }
 
 class social_contact_display extends WP_Widget {

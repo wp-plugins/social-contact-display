@@ -170,7 +170,7 @@ if( $instance) {
 <label for="<?php echo $this->get_field_id('select'); ?>"><?php _e('Select', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('select'); ?>" id="<?php echo $this->get_field_id('select'); ?>" class="widefat">
 <?php
-$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Retro', 'Retro 2', 'Retro Circle Pink', 'Retro Circle Green', 'Retro Circle Grey', 'Retro Circle Blue', 'Wooden', 'CSS and HTML5 set 1', 'CSS and HTML5 set 2', 'Paper Flowers', 'Ribbon', 'Purple Rimmed', 'Social Trucks');
+$options = array('Light', 'Dark', 'Modern Flat', 'Cute', 'Shaded', 'Simple Flat', 'Circle', 'Vintage', 'Retro', 'Retro 2', 'Retro Circle Pink', 'Retro Circle Green', 'Retro Circle Grey', 'Retro Circle Blue', 'Wooden', 'CSS and HTML5 set 1', 'CSS and HTML5 set 2', 'Paper Flowers', 'Ribbon', 'Purple Rimmed', 'Social Trucks', 'Old Bottle Crowns');
 foreach ($options as $option) {
 echo '<option value="' . $option . '" id="' . $option . '"', $select == $option ? ' selected="select"' : '', '>', $option, '</option>';
 }
@@ -360,6 +360,9 @@ function widget($args, $instance) {
 		}
 	elseif ( $select == 'Social Trucks' ) {
 		include_once "includes/simple/trucks.php";
+		}
+	elseif ( $select == 'Old Bottle Crowns' ) {
+		include_once "includes/simple/old-bottle-crowns.php";
 		}	
 		
    echo '</div>';
