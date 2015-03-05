@@ -2,12 +2,13 @@
 /*
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.wp-creative.co.uk/social-contact-display-widget/
-Description: Display your contact details and social media pages easily through this simple widget or shortcode. The Pro version also includes a business hours widget, custom CSS and interactive Google map. 
-Version: 2.3.8
+Description: Display your contact details and social media pages easily through this simple widget or shortcode. Need WordPress hosting? <a href="http://quickclickhosting.com/cms/wordpress-hosting/">Quick Click Hosting</a> premium WP hosting starts from only 1.95 per month!
+Version: 3.0
 Author: WPCreative (Ian Norris, James White)
 License: GPL2+
 Author URI: http://www.wp-creative.co.uk
 */
+
 
 /**
  * Define Constants
@@ -31,7 +32,9 @@ require_once('scd-options.php');
 require_once('scd-helper-functions.php');
 require_once('scd-widget.php');
 require_once('scd-social-interaction-buttons.php');
-require_once('scd-googlemap.php');
+require_once('scd-googlemap-v3.php');
+require_once('scd-business-hours.php');
+require_once('scd-custom-css.php');
 //Load legacy Simple Social Contact Display widget
 require_once('simple-social-contact-display.php');
 
@@ -49,8 +52,7 @@ function ts_add_plugin_action_links( $links ) {
  
 	return array_merge(
 		array(
-			'faq' => '<a href="' . get_bloginfo( 'wpurl' ) . '/wp-admin/tools.php?page=scd-settings">Settings</a>',
-			'pro' => '<a href="http://www.wp-creative.co.uk/social-contact-display-pro/" target="_blank">Go Pro for only 99p!</a>'
+			'faq' => '<a href="' . get_bloginfo( 'wpurl' ) . '/wp-admin/tools.php?page=scd-settings">Settings</a>'
 		),
 		$links
 	);
@@ -66,10 +68,7 @@ function ts_plugin_meta_links( $links, $file ) {
 	if ( $file == $plugin ) {
 		return array_merge(
 			$links,
-			array( 
-				'<a href="http://wordpress.org/plugins/social-contact-display/faq/ target="_blank"">FAQ</a>', 
-				'<a href="http://www.wp-creative.co.uk/social-contact-display-pro/" target="_blank">Go Pro for only 99p!</a>'
-				)
+			array( '<a href="http://wordpress.org/plugins/social-contact-display/faq/ target="_blank"">FAQ</a>' )
 		);
 	}
 	return $links;
@@ -126,6 +125,11 @@ function scd_get_settings() {
 				case 'google-map':
 					$scd_option_name = $scd_option_name . '_google_map';
 				break;
+				
+				// Business Hours
+				case 'business-hours':
+					$scd_option_name = $scd_option_name . '_business_hours';
+				break;
 			}
 		break;
 	}
@@ -155,7 +159,7 @@ function scd_create_settings_field( $args = array() ) {
 		'desc'    => 'This is a default description.', 	// the description displayed under the HTML form element
 		'std'     => '', 								// the default value for this setting
 		'type'    => 'text', 							// the HTML form element to use
-		'section' => 'main_section', 					// the section this setting belongs to � must match the array key of a section in scd_options_page_sections()
+		'section' => 'main_section', 					// the section this setting belongs to ? must match the array key of a section in scd_options_page_sections()
 		'choices' => array(), 							// (optional): the values in radio buttons or a drop-down menu
 		'class'   => '' 								// the HTML form element class. Is used for validation purposes and may be also use for styling if needed.
 	);
@@ -253,7 +257,7 @@ function  scd_section_fn($desc) {
 	$tab = scd_get_the_tab();
 
 	if ($tab == 'google-map'){
-	echo "<p>" . __('Shortcode for this section is: [scd_google_static_map]. For more information on settings, please see <a href="https://developers.google.com/maps/documentation/staticmaps/" target="_blank" >here</a>','scd_textdomain') . "</p>";
+	echo "<p>" . __('Shortcode for this section is: [scd_google_map]. For more information on settings, please see <a href="https://developers.google.com/maps/documentation/staticmaps/" target="_blank" >here</a>','scd_textdomain') . "</p>";
 	}
 	elseif ($tab == 'contact-details') {
 		echo "<p>" . __('Widget for this section is: <strong>Social Contact Display</strong><br>Shortcode for this section is: <strong>[scd_social_contact_display]</strong>','scd_textdomain') . "</p>";

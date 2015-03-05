@@ -3,112 +3,133 @@
 //tell WP about our shortcode
 add_shortcode( 'scd_social_contact_display', 'social_contact_display_shortcode' );
 
-function social_contact_display_shortcode(){
+function social_contact_display_shortcode($atts){
+
    $scd_option = scd_get_global_options(); 
    get_option('scd_options');
    
-   if ( $scd_option['scd_txt_title'] ) {
-      echo '<strong>' . $scd_option['scd_txt_title'] .'</strong><br /><br />';
+   extract(shortcode_atts(array(
+
+    //defaults
+	'address' => 'yes', 	
+    'title' => '' . $scd_option['scd_txt_title'] . '',
+	'addresslineone' => '' . $scd_option['scd_txt_addresslineone'] . '',
+	'addresslinetwo' => '' . $scd_option['scd_txt_addresslinetwo'] . '',
+	'city' => '' . $scd_option['scd_txt_city'] . '',
+	'county' => '' . $scd_option['scd_txt_county'] . '',
+	'pcode' => '' . $scd_option['scd_txt_pcode'] . '',
+	'telephone' => '' . $scd_option['scd_txt_telephone'] . '',
+	'mobile' => '' . $scd_option['scd_txt_mobile'] . '',
+	'fax' => '' . $scd_option['scd_txt_fax'] . '',
+	'email' => '' . $scd_option['scd_txt_email'] . '',
+	'socialiconstitle' => '' . $scd_option['scd_txt_socialiconstitle'] . '',
+	'socialmediaicons' => '' . $scd_option['scd_select_input'] . ''
+  
+  ), $atts ));
+   if ( $address == 'yes' ) {
+   if ( $title ) {
+      echo '<strong>' . $title .'</strong><br /><br />';
    }
-   if( $scd_option['scd_txt_addresslineone'] ) {
-      echo ''.$scd_option['scd_txt_addresslineone'].'<br />';
+   if( $addresslineone ) {
+      echo ''.$addresslineone.'<br />';
    }
-   if( $scd_option['scd_txt_addresslinetwo'] ) {
-     echo ''.$scd_option['scd_txt_addresslinetwo'].'<br />';
+   if( $addresslinetwo ) {
+     echo ''.$addresslinetwo.'<br />';
    }
-   if( $scd_option['scd_txt_city'] ) {
-     echo ''.$scd_option['scd_txt_city'].'<br />';
+   if( $city ) {
+     echo ''.$city.'<br />';
    }
-   if( $scd_option['scd_txt_county'] ) {
-     echo ''.$scd_option['scd_txt_county'].'<br />';
+   if( $county ) {
+     echo ''.$county.'<br />';
    }
-   if( $scd_option['scd_txt_pcode'] ) {
-     echo ''.$scd_option['scd_txt_pcode'].'<br />';
+   if( $pcode ) {
+     echo ''.$pcode.'<br />';
 	 }
- 	 if($scd_option['scd_txt_pcode'] == "" ) {
+ 	 if($pcode == "" ) {
 		echo '<p></p>';
    }
-   if( $scd_option['scd_txt_telephone'] ) {
-     echo '<br />'.$scd_option['scd_txt_telephone'].'';
+   if( $telephone ) {
+     echo '<br />'.$telephone.'';
    }
-   if( $scd_option['scd_txt_mobile'] ) {
-     echo '<br />'.$scd_option['scd_txt_mobile'].'';
+   if( $mobile ) {
+     echo '<br />'.$mobile.'';
    }
-   if( $scd_option['scd_txt_fax'] ) {
-     echo '<br />'.$scd_option['scd_txt_fax'].'';
+   if( $fax ) {
+     echo '<br />'.$fax.'';
    }
-   if( $scd_option['scd_email_txt_input'] ) {
-     echo '<br /><br /><a href="mailto:' . antispambot($scd_option['scd_email_txt_input']) .'">' . antispambot($scd_option['scd_email_txt_input']) . '</a><br />';
    }
-   if( $scd_option['scd_txt_socialiconstitle'] ) {
-     echo '<br /><br /><strong>' . $scd_option['scd_txt_socialiconstitle'] . '</strong><br /><br />';
+   if( $email ) {
+     echo '<br /><br /><a href="mailto:' . antispambot($email) .'">' . antispambot($email) . '</a><br />';
+   };
+   if( $socialiconstitle ) {
+     echo '<br /><br /><strong>' . $socialiconstitle . '</strong><br /><br />';
    }
-   if($scd_option['scd_txt_socialiconstitle'] == "" ) {
+   if($socialiconstitle == "" ) {
 		echo '<p></p>';
    }
 
    // Get $select value
-	if ( $scd_option['scd_select_input'] == 'Light' ) {
+	if ( $socialmediaicons == 'Light' ) {
 		include_once "includes/light.php";
 		} 
-	elseif ( $scd_option['scd_select_input'] == 'Dark' ) {
+	elseif ( $socialmediaicons == 'Dark' ) {
 		include_once "includes/dark.php";
 		}
-	elseif ( $scd_option['scd_select_input'] == 'Cute' ) {
+	elseif ( $socialmediaicons == 'Cute' ) {
 		include_once "includes/cute.php";
 		}		
-	elseif ( $scd_option['scd_select_input'] == 'Shaded' ) {
+	elseif ( $socialmediaicons == 'Shaded' ) {
 		include_once "includes/shaded.php";
 		}	
-	elseif ( $scd_option['scd_select_input'] == 'Simple Flat' ) {
+	elseif ( $socialmediaicons == 'Simple Flat' ) {
 		include_once "includes/simple-flat.php";
 		}
-	elseif ( $scd_option['scd_select_input'] == 'Circle' ) {
+	elseif ( $socialmediaicons == 'Circle' ) {
 		include_once "includes/circle.php";
 		}
-	elseif ( $scd_option['scd_select_input'] == 'Vintage' ) {
+	elseif ( $socialmediaicons == 'Vintage' ) {
 		include_once "includes/vintage.php";
 		}	
-	elseif ( $scd_option['scd_select_input'] == 'Wooden' ) {
+	elseif ( $socialmediaicons == 'Wooden' ) {
 		include_once "includes/wooden.php";
 		}	
-	elseif ( $scd_option['scd_select_input'] == 'Modern Flat' ) {
+	elseif ( $socialmediaicons == 'Modern Flat' ) {
 		include_once "includes/modernflat.php";
 		}
-	elseif ( $scd_option['scd_select_input'] == 'CSS and HTML5 set 1' ) {
+	elseif ( $socialmediaicons == 'CSS and HTML5 set 1' ) {
 		include_once "includes/css1.php";
 		}
-	elseif ( $scd_option['scd_select_input'] == 'CSS and HTML5 set 2' ) {
+	elseif ( $socialmediaicons == 'CSS and HTML5 set 2' ) {
 		include_once "includes/css2.php";
 		}	
-	elseif ( $scd_option['scd_select_input'] == 'Retro' ) {
+	elseif ( $socialmediaicons == 'Retro' ) {
 		include_once "includes/retro.php";
 		}	
-	elseif ( $scd_option['scd_select_input'] == 'Retro 2' ) {
+	elseif ( $socialmediaicons == 'Retro 2' ) {
 		include_once "includes/retro2.php";
 		}	
-	elseif ( $scd_option['scd_select_input'] == 'Retro Circle Pink' ) {
+	elseif ( $socialmediaicons == 'Retro Circle Pink' ) {
 		include_once "includes/retrocircle.php";
 		}
-	elseif ( $scd_option['scd_select_input'] == 'Retro Circle Green' ) {
+	elseif ( $socialmediaicons == 'Retro Circle Green' ) {
 		include_once "includes/retrocircle-green.php";
 		}
-	elseif ( $scd_option['scd_select_input'] == 'Retro Circle Grey' ) {
+	elseif ( $socialmediaicons == 'Retro Circle Grey' ) {
 		include_once "includes/retrocircle-grey.php";
 		}
-	elseif ( $scd_option['scd_select_input'] == 'Retro Circle Blue' ) {
+	elseif ( $socialmediaicons == 'Retro Circle Blue' ) {
 		include_once "includes/retrocircle-blue.php";
 		}	
-	elseif ( $scd_option['scd_select_input'] == 'Paper Flowers' ) {
+	elseif ( $socialmediaicons == 'Paper Flowers' ) {
 		include_once "includes/paperflowers.php";
 		}
-	elseif ( $scd_option['scd_select_input'] == 'Purple Rimmed' ) {
+	elseif ( $socialmediaicons == 'Purple Rimmed' ) {
 		include_once "includes/purplerimmed.php";
-		}
-	elseif ( $scd_option['scd_select_input'] == 'Social Trucks' ) {
+		}	
+	elseif ( $socialmediaicons == 'Social Trucks' ) {
 		include_once "includes/trucks.php";
 		}
-	elseif ( $scd_option['scd_select_input'] == 'Old Bottle Crowns' ) {
+	elseif ( $socialmediaicons == 'Old Bottle Crowns' ) {
 		include_once "includes/old-bottle-crowns.php";
 		}		
 }
@@ -138,7 +159,7 @@ get_option('scd_options');
    // Display the widget
    echo '<div class="widget-text wp_widget_plugin_box" style:>';
 
-   echo do_shortcode('[scd_social_contact_display]');
+   echo do_shortcode('[scd_social_contact_display address="yes"]');
    
    echo '</div>';
    echo $after_widget;
@@ -153,7 +174,7 @@ add_action('init', 'register_style');
 function register_style(){
 
     wp_register_style( 'social_contact_display', plugins_url('/lib/css/socialcontactdisplay.css', __FILE__));
-//	wp_register_style( 'entypo', plugins_url('/lib/css/entypo.css', __FILE__));
+	wp_register_style( 'entypo', plugins_url('/lib/css/entypo.css', __FILE__));
 }
 
 // use the registered style above

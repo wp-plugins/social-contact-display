@@ -220,6 +220,9 @@ function update($new_instance, $old_instance) {
 	  $instance['rssfeed'] = strip_tags($new_instance['rssfeed']);
 	  $instance['select'] = strip_tags($new_instance['select']);
 	  $instance['vertical'] = strip_tags($new_instance['vertical']);
+	  
+	  $cdn = "//cdn.wp-creative.co.uk/social-contact-display/images/";
+	  
      return $instance;
 }
 
@@ -250,8 +253,6 @@ function widget($args, $instance) {
    $rssfeed = $instance['rssfeed'];
    $select = $instance['select'];
    $vertical = $instance['vertical'];
-   
-   $cdn = "//cdn.wp-creative.co.uk/social-contact-display/images/";
 
    echo $before_widget;
    // Display the widget

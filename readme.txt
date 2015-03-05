@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 4.1.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 2.3.8
+Stable Tag: 3.0
 
 Social Contact Display Widget
 
@@ -13,30 +13,11 @@ Social Contact Display Widget
 
 WP Creative have created a simple social contact display widget for your WordPress website. A very simple user interface allows you to easily update both your business address and your social media sites, including Facebook, Twitter, LinkedIn, Google Plus, Pinterest and Instagram. The widget is modular, so you can choose which options you want to display.
 
-You currently have 22 <a href="http://demo.wp-creative.co.uk/contact-display-widget/social-media-icons/">Social Media Icon Sets</a> to choose from and the list is being added to all the time.
+You currently have 23 <a href="http://demo.wp-creative.co.uk/contact-display-widget/social-media-icons/">Social Media Icon Sets</a> to choose from and the list is being added to all the time.
 
 We have also recently added lightweight pure HTML5 and CSS3 social media icon sets.
 
 Check out a demo: <a href="http://demo.wp-creative.co.uk/social-contact-display-widget/">Here</a>
-
-A Pro version can also be purchased after installing the standard version. The changelog for the pro version is (also includes all standard updates):
-
-= 3.5 =
-* Added licensing for automatic upgrades
-
-= 3.3 =
-* Added new shortcode attributes for the social contact display widget - you can now create individual address's and display separate social media icon sets
-
-= 3.2 =
-* Google map is now interactive instead of static
-
-= 3.1 =
-* Added the ability to add custom CSS to individual widgets. Custom CSS needs to be added to your main CSS file with !important tags
-
-= 3.0 =
-* Pro version released with business hours widget
-
-
 
 == Installation ==
 
@@ -47,6 +28,10 @@ A Pro version can also be purchased after installing the standard version. The c
 5. Fill in the options and select Save
 
 == Frequently Asked Questions ==
+
+= What has changed in Version 3? =
+
+The pro and free plugin has now been merged. Thanks to everyone who donated to the project. We are now putting our efforts into making the plugin the best it can be for our users.
 
 = What has changed in Version 2? =
 
@@ -88,6 +73,12 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 2. "Social Interaction Buttons" widget
 
 == Changelog ==
+
+= 3.0 =
+* Added business hours widget .
+* Added the ability to add custom CSS to individual widgets. Custom CSS needs to be added to your main CSS file with !important tags.
+* Added new shortcode attributes for the social contact display widget - you can now create individual address's and display separate social media icon sets.
+* Updated the Google Map widget to be interactive.
 
 = 2.3.8 =
 * Added Old Bottle Crowns social media icons (Only for Facebook, Twitter, Google+, Linked-In, YouTube and RSS)

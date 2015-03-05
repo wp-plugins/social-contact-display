@@ -1,24 +1,24 @@
 <?php
 
-   if( $facebook != "http://" && $facebook !="" ) {
-    echo '<a href="'.$facebook.'" target="_blank"><img src="'.$cdn.'Social-Truck/Social-Truck_fb1.png" height="38" width="37" ></a>&nbsp;';
+   if( $facebook != "http://" ) {
+    echo '<a href="'.$facebook.'" target="_blank"><img src="http://cdn.wp-creative.co.uk/social-contact-display/images/Social-Truck/Social-Truck_fb1.png" height="38" width="37" ></a>&nbsp;';
    }
    if ( $vertical == '1' ) { 
      echo '<br>'; 
    }
-  if( $twitter != "http://" && $twitter !="" ) {
-     echo '<a href="'.$twitter.'" target="_blank"><img src="'.$cdn.'Social-Truck/Social-Truck_twi.png" height="38" width="37" ></a>&nbsp;';
+  if( $twitter != "http://" ) {
+     echo '<a href="'.$twitter.'" target="_blank"><img src="http://cdn.wp-creative.co.uk/social-contact-display/images/Social-Truck/Social-Truck_twi.png" height="38" width="37" ></a>&nbsp;';
    }
    if ( $vertical == '1' ) { 
      echo '<br>'; 
    }
-   if( $linkedin != "http://" && $linkedin !="" ) {
-     echo '<a href="'.$linkedin.'" target="_blank"><img src="'.$cdn.'Social-Truck/Social-Truck_li1.png" height="38" width="37" ></a>&nbsp;';
+   if( $linkedin != "http://" ) {
+     echo '<a href="'.$linkedin.'" target="_blank"><img src="http://cdn.wp-creative.co.uk/social-contact-display/images/Social-Truck/Social-Truck_li1.png" height="38" width="37" ></a>&nbsp;';
    }
    if ( $vertical == '1' ) { 
      echo '<br>'; 
    }  
    if( $rssfeed ) {
-     echo '<a href="'?><?php bloginfo('rss2_url'); ?><?php echo '" target="_blank"><img src="'.$cdn.'Social-Truck/Social-Truck_rss.png" height="38" width="37" ></a>&nbsp;';
+     echo '<a href="'?><?php bloginfo('rss2_url'); ?><?php echo '" target="_blank"><img src="http://cdn.wp-creative.co.uk/social-contact-display/images/Social-Truck/Social-Truck_rss.png" height="38" width="37" ></a>&nbsp;';
    }
 ?>

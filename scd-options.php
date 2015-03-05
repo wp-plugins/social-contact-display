@@ -1,7 +1,7 @@
 <?php
 /**
  * Define page tabs
- *  
+ *
  */
 function scd_options_two_page_tabs() {
 	
@@ -11,7 +11,8 @@ function scd_options_two_page_tabs() {
 	$tabs['contact-details'] 	= __('Contact Details', 'scd');	
 	$tabs['social-media'] 	= __('Social Media', 'scd');	
 	$tabs['social-share'] 		= __('Social Sharing', 'scd');
-	$tabs['google-map']		= __('Google Map', 'scd');	
+	$tabs['google-map']		= __('Google Map', 'scd');
+	$tabs['business-hours']		= __('Business Hours', 'scd');
 	
 	return $tabs;
 }
@@ -62,6 +63,12 @@ function scd_options_two_page_sections() {
 			$sections = array();
 			$sections['google_map_section'] 	= __('Static Google Map Image Settings', 'scd_textdomain');
 		break;
+		
+		// Business Hours
+        case 'business-hours':
+			$sections = array();
+			$sections['business_hours_section'] 	= __('Business Hours Settings', 'scd_textdomain');
+		break;
 	}
 	
 return $sections;	
@@ -92,7 +99,7 @@ function scd_options_two_page_fields() {
 		"type"    => "text",
 		"std"     => __('','scd_textdomain')
 	);
-		
+	
 	$options[] = array(
 		"section" => "txt_section",
 		"id"      => SCD_SHORTNAME . "_txt_addresslineone",
@@ -518,21 +525,20 @@ function scd_options_two_page_fields() {
 	
 	$options[] = array(
 		"section" => "google_map_section",
-		"id"      => SCD_SHORTNAME . "_google_map_size",
-		"title"   => __( 'Size:', 'scd_textdomain' ),
+		"id"      => SCD_SHORTNAME . "_google_map_width",
+		"title"   => __( 'Width:', 'scd_textdomain' ),
 		"desc"    => __( 'Size in pixels', 'scd_textdomain' ),
 		"type"    => "text",
-		"std"     => __('400x400','scd_textdomain')
+		"std"     => __('170','scd_textdomain')
 	);
 	
 	$options[] = array(
 		"section" => "google_map_section",
-		"id"      => SCD_SHORTNAME . "_google_map_scale",
-		"title"   => __( 'Scale:', 'scd_textdomain' ),
-		"desc"    => __( '', 'scd_textdomain' ),
-		"type"    => "select",
-		"std"     => "1",
-		"choices" => array( "1", "2" )
+		"id"      => SCD_SHORTNAME . "_google_map_height",
+		"title"   => __( 'Height:', 'scd_textdomain' ),
+		"desc"    => __( 'Size in pixels', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => __('170','scd_textdomain')
 	);
 	
 	$options[] = array(
@@ -551,18 +557,84 @@ function scd_options_two_page_fields() {
 		"title"   => __( 'Map type:', 'scd_textdomain' ),
 		"desc"    => __( '', 'scd_textdomain' ),
 		"type"    => "select",
-		"std"     => "roadmap",
-		"choices" => array( "roadmap", "satellite", "terrain", "hybrid" )
+		"std"     => "ROADMAP",
+		"choices" => array( "ROADMAP", "SATELLITE", "HYBRID", "TERRAIN" )
+	);
+		
+		break;
+		
+		case 'business-hours':		
+		// Business Hours Setting
+	$options[] = array(
+		"section" => "business_hours_section",
+		"id"      => SCD_SHORTNAME . "_business_hours_title",
+		"title"   => __( 'Title:', 'scd_textdomain' ),
+		"desc"    => __( 'A regular text input field. Some inline HTML (&lt;a&gt;, &lt;b&gt;, &lt;em&gt;, &lt;i&gt;, &lt;strong&gt;) is allowed.', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => __('Opening times','scd_textdomain')
 	);
 	
 	$options[] = array(
-		"section" => "google_map_section",
-		"id"      => SCD_SHORTNAME . "_google_map_format",
-		"title"   => __( 'Format:', 'scd_textdomain' ),
+		"section" => "business_hours_section",
+		"id"      => SCD_SHORTNAME . "_business_hours_monday",
+		"title"   => __( 'Monday:', 'scd_textdomain' ),
 		"desc"    => __( '', 'scd_textdomain' ),
-		"type"    => "select",
-		"std"     => "png",
-		"choices" => array( "png", "gif", "jpg" )
+		"type"    => "text",
+		"std"     => __('09:00 - 17:00','scd_textdomain')
+	);
+	
+	$options[] = array(
+		"section" => "business_hours_section",
+		"id"      => SCD_SHORTNAME . "_business_hours_tuesday",
+		"title"   => __( 'Tuesday:', 'scd_textdomain' ),
+		"desc"    => __( '', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => __('09:00 - 17:00','scd_textdomain')
+	);
+	
+	$options[] = array(
+		"section" => "business_hours_section",
+		"id"      => SCD_SHORTNAME . "_business_hours_wednesday",
+		"title"   => __( 'Wednesday:', 'scd_textdomain' ),
+		"desc"    => __( '', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => __('09:00 - 17:00','scd_textdomain')
+	);
+	
+	$options[] = array(
+		"section" => "business_hours_section",
+		"id"      => SCD_SHORTNAME . "_business_hours_thursday",
+		"title"   => __( 'Thursday:', 'scd_textdomain' ),
+		"desc"    => __( '', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => __('09:00 - 17:00','scd_textdomain')
+	);
+	
+	$options[] = array(
+		"section" => "business_hours_section",
+		"id"      => SCD_SHORTNAME . "_business_hours_friday",
+		"title"   => __( 'Friday:', 'scd_textdomain' ),
+		"desc"    => __( '', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => __('09:00 - 17:00','scd_textdomain')
+	);
+	
+	$options[] = array(
+		"section" => "business_hours_section",
+		"id"      => SCD_SHORTNAME . "_business_hours_saturday",
+		"title"   => __( 'Saturday:', 'scd_textdomain' ),
+		"desc"    => __( '', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => __('Closed','scd_textdomain')
+	);
+	
+	$options[] = array(
+		"section" => "business_hours_section",
+		"id"      => SCD_SHORTNAME . "_business_hours_sunday",
+		"title"   => __( 'Sunday:', 'scd_textdomain' ),
+		"desc"    => __( '', 'scd_textdomain' ),
+		"type"    => "text",
+		"std"     => __('Closed','scd_textdomain')
 	);
 	
 		break;
