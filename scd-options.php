@@ -174,7 +174,7 @@ function scd_options_two_page_fields() {
 	
 	$options[] = array(
 		"section" => "txt_section",
-		"id"      => SCD_SHORTNAME . "_email_txt_input",
+		"id"      => SCD_SHORTNAME . "_txt_email",
 		"title"   => __( 'Email:', 'scd_textdomain' ),
 		"desc"    => __( 'A text input field which can be used for email input.', 'scd_textdomain' ),
 		"type"    => "text",

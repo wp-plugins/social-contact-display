@@ -3,7 +3,7 @@
 Plugin Name: Social Contact Display
 Plugin URI: http://demo.wp-creative.co.uk/social-contact-display-widget/
 Description: Display your contact details and social media pages easily through this simple widget or shortcode. Need WordPress hosting? <a href="http://quickclickhosting.com/cms/wordpress-hosting/">Quick Click Hosting</a> premium WP hosting starts from only 1.95 per month!
-Version: 3.0
+Version: 3.0.1
 Author: WPCreative (Ian Norris, James White)
 License: GPL2+
 Author URI: http://www.wp-creative.co.uk

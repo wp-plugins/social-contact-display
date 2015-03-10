@@ -5,7 +5,7 @@ Requires at least: 3.0.1
 Tested up to: 4.1.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 3.0
+Stable Tag: 3.0.1
 
 Social Contact Display Widget
 
@@ -73,6 +73,9 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 2. "Social Interaction Buttons" widget
 
 == Changelog ==
+
+= 3.0.1 =
+* Fixed the email display.
 
 = 3.0 =
 * Added business hours widget .
