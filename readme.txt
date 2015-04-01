@@ -1,11 +1,11 @@
 === Plugin Name ===
 Contributors: hptonline
-Tags: social, contact, widget, social media, facebook, google plus, google, twitter, linkedin, youtube, pinterest, instagram, social media icons, social share, css, html5, google map
+Tags: social, contact, contact form, widget, social media, facebook, google plus, google, twitter, linkedin, youtube, pinterest, instagram, social media icons, social share, css, html5, google map, map, custom, free, share
 Requires at least: 3.0.1
 Tested up to: 4.1.1
 License: GPLv2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable Tag: 3.0.2
+Stable Tag: 3.0.3
 
 Social Contact Display Widget
 
@@ -73,6 +73,9 @@ http://demo.wp-creative.co.uk/social-contact-display-widget/plugin-suggestion/
 2. "Social Interaction Buttons" widget
 
 == Changelog ==
+
+= 3.0.3 =
+* Fixed issue with simple widget not displaying icons
 
 = 3.0.2 =
 * Added Socialize Icons Set social media icons

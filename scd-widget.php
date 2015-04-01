@@ -26,6 +26,9 @@ function social_contact_display_shortcode($atts){
 	'socialmediaicons' => '' . $scd_option['scd_select_input'] . ''
   
   ), $atts ));
+  
+	$cdn = "//cdn.wp-creative.co.uk/social-contact-display/images/";
+  
    if ( $address == 'yes' ) {
    if ( $title ) {
       echo '<strong>' . $title .'</strong><br /><br />';
